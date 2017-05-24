@@ -23,10 +23,12 @@
       border-radius: 0;
       padding: 15px 20px;
       margin-right: 0;
-      font-family: 'Montserrat';
+      font-family: 'Roboto';
       font-weight: 400;
       color: fade-out($color-master,.3);
-      font-size: 12px;
+      font-size: 14px;
+      font-weight: bold;
+      
       min-width: 70px;
       text-transform: uppercase;
       border-color: transparent;
@@ -99,7 +101,7 @@
     width: 100%;
     position: relative;
     bottom: 3px;
-    z-index: 120;
+    z-index: 12;
   }
   & > li {
     margin-bottom: 0;
@@ -108,7 +110,8 @@
       -webkit-backface-visibility: hidden;
       width: 100%;
       display: block;
-      background-color: $color-danger;
+      background-color: $color-primary;
+
       height: 0px;
       content: '';
       z-index: 125;

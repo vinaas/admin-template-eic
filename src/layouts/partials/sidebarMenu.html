@@ -1,33 +1,46 @@
 <!-- BEGIN SIDEBAR MENU -->
 <div class="sidebar-menu">
     <ul class="menu-items">
-        <li class="m-t-30 {{#ifContain 'sodu' layout }} active {{/ifContain}}">
-            <a href="javascript:;">
-                <span class="title">Quản lý số dư</span>
-                <span class=" arrow"></span>
-            </a>
-            <span class="icon-thumbnail"><i class="pg-grid"></i></span>
+        <li class=" m-t-30 {{#ifContain 'trangmau' layout }} active {{/ifContain}}">
+            <a href="javascript:;"><span class="title">Trang mẫu</span>
+        <span class="arrow"></span></a>
+            <span class="icon-thumbnail"><i class="pg-menu_lv"></i></span>
+
             <ul class="sub-menu">
 
-
-                <li class="{{#ifContain 'phongkinhdoanh' layout }} active {{/ifContain}}">
-                    <a href="phongkinhdoanh.html">
-                        <span class="title">Phòng kinh doanh</span>
-                    </a>
-                    <span class="icon-thumbnail "><i class="fa fa-money"></i></span>
+                <li class="{{#ifContain 'trangmau1' layout }} active {{/ifContain}}">
+                    <a href="trangmau1.html">Trang mẫu </a>
                 </li>
 
-                <li class="{{#ifContain 'banlanhdao' layout }} active {{/ifContain}}">
-                    <a href="banlanhdao.html">
-                        <span class="title">Ban lãnh đạo</span>
-                    </a>
-                    <span class="icon-thumbnail "><i class="fa fa-users"></i></span>
-                </li>
+                <li class="{{#ifContain 'trangmau' layout }} active {{/ifContain}}">
+                    <a href="javascript:;"><span class="title">Trang mẫu con</span>
+<span class="arrow"></span>
+</a>
+                    <!--<span class="icon-thumbnail"></span>-->
+                    <ul class="sub-menu">
+                        <li class="{{#ifContain 'trangmau2' layout }} active {{/ifContain}}">
+                            <a href="trangmau2.html">Trang mẫu 2</a> </li>
 
+                        <li class="{{#ifContain 'trangmau3' layout }} active {{/ifContain}}">
+                            <a href="trangmau3.html">Trang mẫu </a> </li>
+
+                    </ul>
+                </li>
 
             </ul>
+        </li>
+        <li class="{{#ifContain 'index' layout }} active {{/ifContain}}">
+            <a href="index.html">
+                <span class="title">Trang login</span>
+            </a>
+            <span class="icon-thumbnail "><i class="fa fa-money"></i></span>
+        </li>
 
 
-            <div class="clearfix"></div>
+
+    </ul>
+
+
+    <div class="clearfix"></div>
 </div>
 <!-- END SIDEBAR MENU -->
