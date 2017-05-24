@@ -1,0 +1,86 @@
+<!-- {{#ifEqual type "doitac"}}
+<div class="bar">
+    <div class="pull-right">
+        <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
+            <i class=" pg-close_line"></i>
+        </a>
+    </div>
+    <div class="bar-inner">
+        <ul>
+            <li class="{{#ifEqual path.name 'doitac'}} active {{/ifEqual}} {{#ifEqual path.name 'doitac-hopdong'}} active {{/ifEqual}} {{#ifEqual path.name 'doitac-choduyet'}} active {{/ifEqual}}">
+                <a href="doitac.html">
+                    <span class="">Danh sách đối tác </span>
+                </a>
+            </li>
+
+              <li class="{{#ifEqual path.name 'doitac-nhantien'}} active {{/ifEqual}}">
+
+                <a href="doitac-nhantien.html">
+                    <span class="">Nhận tiền đối tác chuyển về</span>
+                </a>
+            </li>
+             <li class="{{#ifEqual path.name 'doitac-hanmuc'}} active {{/ifEqual}}">
+                <a href="doitac-hanmuc.html">
+                    <span class="">Danh sách hạn mức</span>
+                </a>
+            </li>
+
+            <li class="{{#ifEqual path.name 'doitac-hoahong'}} active {{/ifEqual}}">
+                <a href="doitac-hoahong.html">
+                    <span class="">Hoa hồng đối tác</span>
+                </a>
+            </li>
+            
+            <li class="{{#ifEqual path.name 'doitac-tonghopgiaodichchitra'}} active {{/ifEqual}}">
+                <a href="doitac-tonghopgiaodichchitra.html">
+                    <span class="">Tổng hợp giao dịch chi trả</span>
+                </a>
+            </li>
+
+            <li class="{{#ifEqual path.name 'doitac-diaban'}} active {{/ifEqual}} {{#ifEqual path.name 'doitac-diabanduyet'}} active {{/ifEqual}}">
+                <a href="doitac-diaban.html">
+                    <span class="">DS Địa bàn</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+{{/ifEqual}} -->
+
+{{#ifEqual type "phongkinhdoanh"}}
+<div class="bar">
+    <div class="pull-right">
+        <a href="#" class="text-black padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="horizontal-menu-toggle">
+            <i class=" pg-close_line"></i>
+        </a>
+    </div>
+    <div class="bar-inner">
+        <ul>
+
+            
+
+            <li class="{{#ifEqual path.name 'phongkinhdoanh'}} active {{/ifEqual}}">
+                <a href="phongkinhdoanh.html">
+                    <span class="">Danh sách nhập liệu </span>
+                </a>
+            </li>
+
+            <li class="{{#ifEqual path.name 'phongkinhdoanh-duyet'}} active {{/ifEqual}}">
+                <a href="phongkinhdoanh-duyet.html">
+                    <span class="">Danh sách duyệt</span>
+                </a>
+            </li>
+
+            <li class="{{#ifEqual path.name 'phongkinhdoanh-thongke'}} active {{/ifEqual}}">
+                <a href="phongkinhdoanh-thongke.html">
+                    <span class="">Thống kê</span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
+{{/ifEqual}}
