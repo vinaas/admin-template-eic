@@ -69,12 +69,14 @@ Generated From SASS
 
 .form-filter {
     margin: 0 -10px;
+    display: flex;
+    flex-flow: row wrap;
     .form-group {
-        width: 20%;
+        flex: 1 1 0px;
+        max-width: 200px;
         padding: 0 10px;
-        float: left;
         &.long {
-            width: 30%;
+            max-width: 300px;
         }
     }
 }
