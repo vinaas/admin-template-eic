@@ -32,6 +32,7 @@ PATHS:
     # Libraries required by Foundation
     # - "src/assets/plugins/pace/pace.min.js" 
     - "src/assets/plugins/jquery/jquery-3.2.0.min.js" 
+    - "src/assets/plugins/switchery/js/switchery.min.js"
     - "src/assets/plugins/modernizr.custom.js" 
     - "src/assets/plugins/jquery-ui/jquery-ui.min.js" 
     - "src/assets/plugins/bootstrapv3/js/bootstrap.min.js" 
@@ -47,6 +48,7 @@ PATHS:
     - "src/assets/plugins/select2/js/select2.full.min.js"
     - "src/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"
     - "src/assets/plugins/jquery-autonumeric/autoNumeric.js"
+    
     - "bower_components/sweetalert/dist/sweetalert.min.js"
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
