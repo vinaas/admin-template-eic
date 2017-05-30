@@ -1,6 +1,6 @@
 ---json
 {
-    "title": Chỉ tiêu chất lượng,
+    "title": Bộ chỉ tiêu chất lượng,
     "slug": "",
     "description": "Index Page",
     "layout": "ChiTieuChatLuong.html",
