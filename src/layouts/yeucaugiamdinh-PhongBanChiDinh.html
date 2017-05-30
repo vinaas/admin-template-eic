@@ -1,5 +1,5 @@
 {{#extend "default"}} {{#content "main"}}
-
+<br>
 <!-- START CONTAINER FLUID -->
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
@@ -21,203 +21,177 @@
 
                 <div class="tab-content">
                     <div class="tab-pane active" id="tabChuaChiDinh">
-                        {{> formSearch type="phongbanchidinh-chuachidinh"}}
-                        <div class="clearfix"></div>
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <div class="pull-right m-b-10">
-                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
-                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="table table-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>STT</th>
-                                                <th>Mã đối tác</th>
-                                                <th>Đối tác yêu cầu</th>
-                                                <th>Phòng ban</th>
-                                                <th>Người yêu cầu</th>
-                                                <th>Giám định viên</th>
-                                                <th>Thời gian</th>
-                                                <th>Chi tiết</th>
-                                                <th>Hành động</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="v-align-middle">1</td>
-                                                <td class="v-align-middle">001</td>
-                                                <td class="v-align-middle">Petro</td>
-                                                <td class="v-align-middle">Phòng Năng lượng</td>
-                                                <td class="v-align-middle">Nguyễn An</td>
-                                                <td class="v-align-middle">Nguyễn Bình</td>
-                                                <td class="v-align-middle">12/03/2017</td>
-                                                <td class="v-align-middle">
-                                                    <a href="" class="text-primary" data-toggle="modal" data-target="#"><i class="fa fa-info-circle"></i> Xem</a>
-                                                </td>
+                        <div class="panel-body">
 
-                                                <td class="v-align-middle">
-                                                    <div class="btn-group sm-m-t-10">
-                                                        <!--Khi bấm vào thì chuyển sang form Thông tin giám định-->
-                                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Chỉ định giám định viên</button>
-                                                        <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="v-align-middle">2</td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="v-align-middle">3</td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                                <td class="v-align-middle"></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                            {{> formSearch type="phongbanchidinh-chuachidinh"}}
+
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Mã đối tác</th>
+                                        <th>Đối tác yêu cầu</th>
+                                        <th>Phòng ban</th>
+                                        <th>Người yêu cầu</th>
+                                        <th>Giám định viên</th>
+                                        <th>Thời gian</th>
+                                        <th>Chi tiết</th>
+                                        <th>Hành động</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="v-align-middle">1</td>
+                                        <td class="v-align-middle">001</td>
+                                        <td class="v-align-middle">Petro</td>
+                                        <td class="v-align-middle">Phòng Năng lượng</td>
+                                        <td class="v-align-middle">Nguyễn An</td>
+                                        <td class="v-align-middle">Nguyễn Bình</td>
+                                        <td class="v-align-middle">12/03/2017</td>
+                                        <td class="v-align-middle">
+                                            <a href="" class="text-primary" data-toggle="modal" data-target="#"><i class="fa fa-info-circle"></i> Xem</a>
+                                        </td>
+
+                                        <td class="v-align-middle">
+                                            <div class="btn-group sm-m-t-10">
+                                                <!--Khi bấm vào thì chuyển sang form Thông tin giám định-->
+                                                <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Chỉ định giám định viên</button>
+                                                <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="v-align-middle">2</td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="v-align-middle">3</td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
 
-                                    {{>pagination}}
-
-                                </div>
-
-                                <div class="clearfix"></div>
+                            {{>pagination}}
 
 
-                            </div>
-
-
-                            <!--sds-->
+                            <div class="clearfix"></div>
 
                         </div>
+
+
 
                     </div>
 
                     <div class="tab-pane " id="tabDaChiDinh">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <form role="form" lpformnum="2" class="form-filter">
-                                            <div class="form-group">
-                                                <label>Đối tác</label>
-                                                <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <form role="form" lpformnum="2" class="form-filter">
+                                        <div class="form-group">
+                                            <label>Đối tác</label>
+                                            <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
                                                 <option value="">Đối tác</option>
                                                 <option value="">ABC</option>
                                                 <option value="">ABC</option>
                                             </select>
+                                        </div>
+                                        <div class="form-group long">
+                                            <label>THEO NGÀY</label>
+                                            <div class="input-daterange input-group" id="datepicker-range">
+                                                <input type="text" class="input form-control" name="start" />
+                                                <span class="input-group-addon">đến</span>
+                                                <input type="text" class="input form-control" name="end" />
                                             </div>
-                                            <div class="form-group long">
-                                                <label>THEO NGÀY</label>
-                                                <div class="input-daterange input-group" id="datepicker-range">
-                                                    <input type="text" class="input form-control" name="start" />
-                                                    <span class="input-group-addon">đến</span>
-                                                    <input type="text" class="input form-control" name="end" />
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
-                                            </div>
-                                        </form>
-                                    </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <div class="pull-right m-b-10">
-                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                          </button>
-                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                          </button>
 
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="table-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>STT</th>
-                                                <th>Mã đối tác</th>
-                                                <th>Đối tác yêu cầu</th>
-                                                <th>Người yêu cầu</th>
-                                                <th>Hạng mục yêu cầu</th>
-                                                <th>Giám định viên</th>
-                                                <th>Trạng thái</th>
-                                                <th>Chi tết</th>
-                                                <th>Hành động</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="v-align-middle">1</td>
-                                                <td class="v-align-middle">123</td>
-                                                <td class="v-align-middle">ABC</td>
-                                                <td class="v-align-middle">Nguyễn An</td>
-                                                <td class="v-align-middle">Giám định số lượng</td>
-                                                <td class="v-align-middle">Nguyễn Văn A</td>
-                                                <td class="v-align-middle"> Đang giám định</td>
-                                                <td class="v-align-middle">
-                                                    <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Xem </button>
-                                                </td>
-                                                <td class="v-align-middle">
-                                                    <div class="btn-group sm-m-t-10">
-                                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Thêm GĐV</button>
-                                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Sửa</button>
-                                                        <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Xóa</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="v-align-middle">2</td>
-                                                <td class="v-align-middle">321</td>
-                                                <td class="v-align-middle">OCB</td>
-                                                <td class="v-align-middle"> Nguyễn An</td>
-                                                <td class="v-align-middle">Giám định chất lượng</td>
-                                                <td class="v-align-middle">Nguyễn Văn A</td>
-                                                <td class="v-align-middle"> Hoàn thành giám định</td>
-                                                <td class="v-align-middle">
-                                                    <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Xem </button>
-                                                </td>
-                                                <td class="v-align-middle">
-                                                    <div class="btn-group sm-m-t-10">
-                                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Thêm GĐV</button>
-                                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Sửa</button>
-                                                        <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Xóa</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    {{>pagination}}
-                                </div>
+
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th>Mã đối tác</th>
+                                            <th>Đối tác yêu cầu</th>
+                                            <th>Người yêu cầu</th>
+                                            <th>Hạng mục yêu cầu</th>
+                                            <th>Giám định viên</th>
+                                            <th>Trạng thái</th>
+                                            <th>Chi tết</th>
+                                            <th>Hành động</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="v-align-middle">1</td>
+                                            <td class="v-align-middle">123</td>
+                                            <td class="v-align-middle">ABC</td>
+                                            <td class="v-align-middle">Nguyễn An</td>
+                                            <td class="v-align-middle">Giám định số lượng</td>
+                                            <td class="v-align-middle">Nguyễn Văn A</td>
+                                            <td class="v-align-middle"> Đang giám định</td>
+                                            <td class="v-align-middle">
+                                                <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Xem </button>
+                                            </td>
+                                            <td class="v-align-middle">
+                                                <div class="btn-group sm-m-t-10">
+                                                    <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Thêm GĐV</button>
+                                                    <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Sửa</button>
+                                                    <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Xóa</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="v-align-middle">2</td>
+                                            <td class="v-align-middle">321</td>
+                                            <td class="v-align-middle">OCB</td>
+                                            <td class="v-align-middle"> Nguyễn An</td>
+                                            <td class="v-align-middle">Giám định chất lượng</td>
+                                            <td class="v-align-middle">Nguyễn Văn A</td>
+                                            <td class="v-align-middle"> Hoàn thành giám định</td>
+                                            <td class="v-align-middle">
+                                                <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Xem </button>
+                                            </td>
+                                            <td class="v-align-middle">
+                                                <div class="btn-group sm-m-t-10">
+                                                    <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Thêm GĐV</button>
+                                                    <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Sửa</button>
+                                                    <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Xóa</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                {{>pagination}}
                             </div>
+
+
                         </div>
+
                     </div>
                 </div>
             </div>
