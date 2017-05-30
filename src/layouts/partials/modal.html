@@ -1295,7 +1295,7 @@
 
                     </div>
 
-                    
+
 
                     <h5>Tài liệu <span class="semi-bold"> Đính kèm</span>
                         <button class="btn btn-default btn-sm  m-l-20 text-primary" type="button" data-toggle="modal" data-target="#modalThemTaiLieu"><i class="fa fa-file"></i> Thêm tài liệu
@@ -1348,23 +1348,23 @@
 
 
                         <div class="row">
-                        <div class="col-md-6">
-                            <div class="row  m-b-15">
-                                <div class="col-md-4  name m-t-5"> Gửi tới phòng ban : </div>
-                                <div class="col-md-8 value">
+                            <div class="col-md-6">
+                                <div class="row  m-b-15">
+                                    <div class="col-md-4  name m-t-5"> Gửi tới phòng ban : </div>
+                                    <div class="col-md-8 value">
 
-                                    <select class="form-control" multiple>
+                                        <select class="form-control" multiple>
                                         <option value="">Phòng năng lượng</option>
                                         <option value="">Phòng năng lượng</option>
                                         <option value="">Phòng năng lượng</option>
                                         <option value="">Phòng năng lượng</option>
                                     </select>
+                                    </div>
                                 </div>
                             </div>
+
+
                         </div>
-
-
-                    </div>
 
 
 
@@ -1592,6 +1592,233 @@
 <!-- END MODAL STICK UP  -->
 
 
+
+
+<!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="modalXoaChiTieu" data-backdrop="static" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                  </button>
+                <h5>Danh sách <span class="semi-bold"> Chỉ tiêu</span></h5>
+                <!--<p>Thông tin lưu ý khi cập nhập loại tiền</p>-->
+            </div>
+            <div class="modal-body">
+                <form role="form">
+
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Chỉ tiêu</th>
+                                    <th>Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="v-align-middle">1</td>
+                                    <td class="v-align-middle">DO 1</td>
+                                    <td class="v-align-middle">
+                                        <a class="text-danger" data-toggle="modal" data-target="#modalXoa" href=""><i class="fa fa-trash-o"></i> Xóa </a></td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">2</td>
+                                    <td class="v-align-middle">DO 2</td>
+                                    <td class="v-align-middle">
+                                       <a  class="text-danger" data-toggle="modal" data-target="#modalXoa" href=""><i class="fa fa-trash-o"></i> Xóa </a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </form>
+                <div class="row">
+
+                    <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                        <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#modalXoa">Xóa bộ chỉ tiêu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
+
+
+
+<!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="modalDetailBoChiTieu" data-backdrop="static" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                  </button>
+                <h5>Danh sách <span class="semi-bold"> Chỉ tiêu</span></h5>
+                <!--<p>Thông tin lưu ý khi cập nhập loại tiền</p>-->
+            </div>
+            <div class="modal-body">
+                <form role="form">
+
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Chỉ tiêu</th>
+                                    <th>Chi tiết</th>
+                                    <th>Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="v-align-middle">1</td>
+                                    <td class="v-align-middle">DO 1</td>
+                                     <td class="v-align-middle">
+                                        <a class="text-primary" data-toggle="modal" data-target="#modalDetailChiTieu" href=""><i class="fa fa-eye"></i> Xem </a></td>
+
+                                    <td class="v-align-middle">
+                                        <a class="text-danger" data-toggle="modal" data-target="#modalXoa" href=""><i class="fa fa-trash-o"></i> Xóa </a></td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">2</td>
+                                    <td class="v-align-middle">DO 2</td>
+
+                                    <td class="v-align-middle">
+                                        <a class="text-primary" data-toggle="modal" data-target="#modalDetailChiTieu" href=""><i class="fa fa-eye"></i> Xem </a></td>
+
+                                    <td class="v-align-middle">
+                                       <a  class="text-danger" data-toggle="modal" data-target="#modalXoa" href=""><i class="fa fa-trash-o"></i> Xóa </a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </form>
+              
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
+
+
+<!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="modalDetailChiTieu" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                    class="pg-close fs-14"></i>
+                </button>
+                <h5>Danh sách  <span class="semi-bold">Các chỉ tiêu</span></h5>
+                <p>Các lưu ý cho thông tin khách hàng</p>
+            </div>
+            <div class="modal-body">
+                <form role="form" class="desModalForm">
+
+                    <h5>Danh sách <span class="semi-bold"> Chỉ tiêu</span>
+                        <button class="btn btn-default btn-sm  m-l-20 text-primary" type="button" data-toggle="modal" data-target="#modalThemChiTieu"><i class="fa fa-file"></i> Thêm chỉ tiêu
+                    </button>
+
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+
+
+                                    <th>STT</th>
+                                    <th>Chỉ tiêu</th>
+                                    <th>Đơn vị</th>
+                                    <th>EURO</th>
+
+                                    <th>Hành động</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td class="v-align-middle">
+                                        1
+                                    </td>
+                                    <td class="v-align-middle">
+                                        Hàm lượng lưu huỳnh
+                                    </td>
+
+                                    <td class="v-align-middle"></td>
+                                    <td class="v-align-middle"></td>
+
+                                   
+
+                                    <td class="v-align-middle">
+
+                                        <div class="btn-group sm-m-t-10">
+                                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalEditChiTieu"><i class="fa fa-edit"></i> Chỉnh sữa
+</button>
+                                            <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
+</button>
+                                        </div>
+
+
+                                    </td>
+
+                                </tr>
+
+                                 <tr>
+
+                                    <td class="v-align-middle">
+                                        2
+                                    </td>
+                                    <td class="v-align-middle">
+                                        Nhiệt độ cất tại 90% thể tích thu hồi
+                                    </td>
+
+                                    <td class="v-align-middle"></td>
+                                    <td class="v-align-middle"></td>
+
+                                   
+
+                                    <td class="v-align-middle">
+
+                                        <div class="btn-group sm-m-t-10">
+                                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalEditChiTieu"><i class="fa fa-edit"></i> Chỉnh sữa
+</button>
+                                            <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
+</button>
+                                        </div>
+
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+
+                        <div class="text-right m-t-20">
+                            <button type="button" class="btn btn-default  m-t-5" data-dismiss="modal">Hủy</button>
+                            <button type="button" class="btn btn-primary  m-t-5">Lưu</button>
+                        </div>
+
+
+
+                </form>
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- END MODAL STICK UP  -->
 
 <!-- MODAL STICK UP  -->
 <div class="modal fade stick-up" id="modalThemTaiLieu" data-backdrop="static" role="dialog" aria-hidden="true">
