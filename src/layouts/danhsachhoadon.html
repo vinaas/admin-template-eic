@@ -4,13 +4,18 @@
   <!-- BEGIN PlACE PAGE CONTENT HERE -->
   <!-- END PLACE PAGE CONTENT HERE -->
   <div class="row">
-    <div class="col-sm-7">
-      <h3 class="page-title">{{title}}</h3>
+    <div class="col-sm-12">
+      <h3 class="page-title">{{title}}
+        <button class="btn btn-default btn-sm m-b-10 m-l-20 m-t-5 text-primary" type="button" data-toggle="modal" data-target="#modalTaoMoiHoaDon"><i class="fa fa-file"></i> Tạo mới
+                </button>
+      </h3>
+
     </div>
   </div>
 
   <div class="row">
     {{>formSearch type="danhsachhoadon"}}
+
 
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -44,15 +49,15 @@
                 <td class="v-align-middle">Giám định số lượng</td>
                 <td class="v-align-middle">213254</td>
                 <td class="v-align-middle">
-                  <a href="" class="text-primary" data-toggle="modal" data-target="#"><i class="fa fa-info-circle"></i> Xem</a>
+                  <a href="" class="text-primary" data-toggle="modal" data-target="#modalChiTietHoaDon"><i class="fa fa-info-circle"></i> Xem</a>
                 </td>
                 <td class="v-align-middle">
-                    <div class="btn-group sm-m-t-10">
-                      <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalXuatHoaDon"><i class="fa fa-edit"></i> Xuất hóa đơn</button>
-                      <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalKhachHang"><i class="fa fa-edit"></i> Chỉnh sữa</button>
-                      <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                    </div>
-                  </td>
+                  <div class="btn-group sm-m-t-10">
+                    <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalXuatHoaDon"><i class="fa fa-edit"></i> Xuất hóa đơn</button>
+                    <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChinhSuaHoaDon"><i class="fa fa-edit"></i> Chỉnh sữa</button>
+                    <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td class="v-align-middle">2</td>
@@ -60,17 +65,16 @@
                 <td class="v-align-middle">Giám định chất lượng</td>
                 <td class="v-align-middle">213254</td>
                 <td class="v-align-middle">
-                  <a href="" class="text-primary" data-toggle="modal" data-target="#"><i class="fa fa-info-circle"></i> Xem</a>
+                  <a href="" class="text-primary" data-toggle="modal" data-target="#modalChiTietHoaDon"><i class="fa fa-info-circle"></i> Xem</a>
                 </td>
                 <td class="v-align-middle">
-                    <div class="btn-group sm-m-t-10">
-                      <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalXuatHoaDon"><i class="fa fa-edit"></i> Xuất hóa đơn</button>
-                      <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalKhachHang"><i class="fa fa-edit"></i> Chỉnh sữa</button>
-                      <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                    </div>
-                  </td>
+                  <div class="btn-group sm-m-t-10">
+                    <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalXuatHoaDon"><i class="fa fa-edit"></i> Xuất hóa đơn</button>
+                    <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChinhSuaHoaDon"><i class="fa fa-edit"></i> Chỉnh sữa</button>
+                    <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                  </div>
+                </td>
               </tr>
-              
             </tbody>
           </table>
           {{>pagination}}
