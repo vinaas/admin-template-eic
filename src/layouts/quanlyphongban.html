@@ -1,187 +1,231 @@
 {{#extend "default"}} {{#content "main"}}
-
 <br>
-
 <div class="container-fluid container-fixed-lg">
-  <!-- BEGIN PlACE PAGE CONTENT HERE -->
-  <!-- END PLACE PAGE CONTENT HERE -->
   <div class="row">
-    <div class="col-sm-12">
-
-      <h3 class="page-title">{{title}}
-
-        <button class="btn btn-default btn-sm m-b-10 m-l-20 m-t-5 text-primary" type="button" data-toggle="modal" data-target="#modalPhongBan"><i class="fa fa-file"></i> Tạo mới
-                </button>
-
-
-      </h3>
-
+    <div class="col-sm-8">
+      <h3 class="page-title">{{title}}</h3>
     </div>
-
-
   </div>
 
   <div class="row">
-
     <div class="col-md-12">
-
       <div class="panel panel-default">
-        <div class="panel-heading clearfix">
+        <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
+          <li class="active"><a href="#tabPhongBan" data-toggle="tab" role="tab">Phòng ban</a>
+          </li>
 
-          <h5 class="m-t-0 ">
-            Danh sách phòng ban
+          <li><a href="#tabNhanVien" data-toggle="tab" role="tab">Nhân viên</a>
+          </li>
 
-          </h5>
+        </ul>
 
-
-
-        </div>
-        <div class="panel-body">
-
-          <div class="row">
-            <div class="col-sm-8">
-
-              <form role="form" lpformnum="2" class="form-filter">
-                <div class="form-group">
-                  <label>Từ khóa</label>
-                  <span class="help">e.g. </span>
-                  <input type="email" class="form-control input-sm">
-                </div>
-
-                <div class="form-group long">
-                  <label>THEO NGÀY</label>
-                  <div class="input-daterange input-group" id="datepicker-range">
-                    <input type="text" class="input-sm form-control" name="start" />
-                    <span class="input-group-addon input-sm">đến</span>
-                    <input type="text" class="input-sm form-control" name="end" />
+        <div class="tab-content">
+          <div class="tab-pane active" id="tabPhongBan">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <button class="btn btn-default btn-sm m-b-10 m-l-20 m-t-5 text-primary" type="button" data-toggle="modal" data-target="#modalPhongBan"><i class="fa fa-file"></i> Tạo mới
+                </button>
+                <div class="pull-right m-b-10">
+                  <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
                   </div>
                 </div>
+                <div class=" table table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>STT</th>
+                        <th>Tên phòng ban</th>
+                        <th>Mã phòng ban</th>
+                        <th>Chi tiết</th>
+                        <th>Hành động</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="v-align-middle">
+                          1
+                        </td>
+                        <td class="v-align-middle">
+                          Phòng năng lượng
+                        </td>
+                        <td class="v-align-middle">
+                          123QWE
+                        </td>
+                        <td class="v-align-middle">
+                          <a href="" class="text-primary" data-toggle="modal" data-target="#modalXemPhongBan"><i class="fa fa-user"></i> Xem</a>
+                        </td>
+                        <td class="v-align-middle">
+                          <div class="btn-group sm-m-t-10">
+                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalPhongBan"><i class="fa fa-edit"></i> Chỉnh sữa</button>
+                            <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="v-align-middle">
+                          2
+                        </td>
+                        <td class="v-align-middle">
+                          Phòng hàng hải
+                        </td>
+                        <td class="v-align-middle">
+                          123QWE
+                        </td>
+
+                        <td class="v-align-middle">
+                          <a href="" class="text-primary" data-toggle="modal" data-target="#modalXemPhongBan"><i class="fa fa-user"></i> Xem</a>
+                        </td>
+
+                        <td class="v-align-middle">
+
+                          <div class="btn-group sm-m-t-10">
+                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalPhongBan"><i class="fa fa-edit"></i> Chỉnh sữa</button>
+                            <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                          </div>
 
 
+                        </td>
 
-                <div class="form-group">
+                      </tr>
 
-                  <button class="btn btn-primary btn-cons btn-sm m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm
-                            </button>
+                    </tbody>
+                  </table>
 
-                </div>
-
-
-              </form>
-
-            </div>
-
-            <div class="col-sm-4">
-
-              <div class="pull-right m-t-25">
-                <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i>
-                          </button>
-                  <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i>
-                          </button>
+                  {{>pagination}}
 
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tabNhanVien">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h5 class="m-t-0">
+                  Tìm kiếm
+                </h5>
+                <form role="form" lpformnum="2" class="form-filter">
+
+                  <div class="form-group">
+                    <label>Phòng ban</label>
+
+                    <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                            <option value=""></option>
+                                            <option value="AK">Phòng năng lượng</option>
+                                            <option value="AK">Phòng hàng hải</option>
+                                        </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="">Tên nhân viên</label>
+                        <input type="text" class="form-control " name="" value="">
+                  </div>
+                  <div class="form-group">
+                      <label for="">Mã nhân viên</label>
+                        <input type="text" class="form-control " name="" value="">
+                  </div>
+
+                  <div class="form-group">
+
+                    <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
+
+                  </div>
+                </form>
+
+
+              </div>
+
 
             </div>
 
-          </div>
+            <div class="panel panel-default">
+             <div class="panel-body">
+                <h5>Danh sách <span class="semi-bold">nhân viên</span>
+                <button class="btn btn-default btn-sm  m-l-20 text-primary" type="button" data-toggle="modal" data-target="#modalNhanVien"><i class="fa fa-user-plus"></i> Thêm nhân viên
+                </button> </h5>
+
+            
+
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
 
 
-          <div class="table-responsive">
-            <table class="table table-hover">
-              <thead>
-                <tr>
+                      <th>STT</th>
+                      <th>Tên nhân viên</th>
+                      <th>Mã nhân viên</th>
+                      <th>Chức vụ</th>
+                      <th>Chi tiết</th>
+                      <th>Hồ sơ</th>
+                      <th>Hành động</th>
+                      <th>Trạng thái</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+
+                      <td class="v-align-middle">
+                        1
+                      </td>
+                      <td class="v-align-middle">
+                        Nguyen Van A
+                      </td>
+                      <td class="v-align-middle">
+                        123QWE
+                      </td>
+
+                      <td class="v-align-middle">
+                        Trưởng phòng
+                      </td>
+
+                      <td class="v-align-middle">
+                        <a href="" class="text-primary" data-toggle="modal" data-target="#modalNhanVien"><i class="fa fa-user-circle-o"></i> Xem</a>
+                      </td>
+
+                      <td class="v-align-middle">
+                        <a href="" class="text-primary" data-toggle="modal" data-target="#modalNhanVien"><i class="fa fa-file-archive-o"></i> Xem hồ sơ</a>
+                      </td>
+
+                      <td class="v-align-middle">
+
+                        <div class="btn-group sm-m-t-10">
+                          <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalNhanVien"><i class="fa fa-edit"></i> Chỉnh sữa
+                                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChuyenPhongBan"><i class="fa fa-edit"></i> Chuyển phòng ban</button>
+                          <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                        </div>
 
 
-                  <th>STT</th>
-                  <th>Tên phòng ban</th>
-                  <th>Mã phòng ban</th>
-                  <th>Chi tiết</th>
-                  <th>Hành động</th>
+                      </td>
 
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
+                      <td class="v-align-middle">
 
-                  <td class="v-align-middle">
-                    1
-                  </td>
-                  <td class="v-align-middle">
-                    Phòng năng lượng
-                  </td>
-                  <td class="v-align-middle">
-                    123QWE
-                  </td>
+                        <input type="checkbox" data-init-plugin="switchery" data-size="small" data-color="primary" checked="checked" />
+                      </td>
 
-                  <td class="v-align-middle">
-                    <a href="" class="text-primary" data-toggle="modal" data-target="#modalXemPhongBan"><i class="fa fa-user"></i> Xem</a>
-                  </td>
+                    </tr>
 
-                  <td class="v-align-middle">
-
-                    <div class="btn-group sm-m-t-10">
-                      <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalPhongBan"><i class="fa fa-edit"></i> Chỉnh sữa
-</button>
-                      <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
-</button>
-                    </div>
+                  </tbody>
+                </table>
 
 
-                  </td>
-
-                </tr>
-
-                <tr>
-
-                  <td class="v-align-middle">
-                    2
-                  </td>
-                  <td class="v-align-middle">
-                    Phòng hàng hải
-                  </td>
-                  <td class="v-align-middle">
-                    123QWE
-                  </td>
-
-                  <td class="v-align-middle">
-                    <a href="" class="text-primary" data-toggle="modal" data-target="#modalXemPhongBan"><i class="fa fa-user"></i> Xem</a>
-                  </td>
-
-                  <td class="v-align-middle">
-
-                    <div class="btn-group sm-m-t-10">
-                      <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalPhongBan"><i class="fa fa-edit"></i> Chỉnh sữa
-</button>
-                      <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa
-</button>
-                    </div>
+                <div class="text-right m-t-20">
+                  <button type="button" class="btn btn-danger m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
+                  <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-save"></i> Lưu</button>
+                </div>
 
 
-                  </td>
-
-                </tr>
-
-              </tbody>
-            </table>
-
-
-            {{>pagination}}
-
-
+              </div>
+             </div>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
-
-
-
-
   </div>
-
 </div>
 
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
