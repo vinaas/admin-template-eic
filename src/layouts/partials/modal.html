@@ -513,15 +513,16 @@
                         <input type="text" class="form-control " name="" value="">
                     </div>
                 </div>
+
                 <div class="text-right m-t-20">
                     <button type="button" class="btn btn-danger m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
-                    <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-plus"></i> Tạo mới</button>
+                    <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-check"></i> Lưu</button>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
+
 <!-- END MODAL STICK UP  -->
 
 <div class="modal fade stick-up" id="modalXemPhongBan" role="dialog" aria-hidden="true" data-backdrop="static">
@@ -1589,8 +1590,7 @@
                             <div class="row  m-b-15">
                                 <div class="col-md-4  name m-t-5"> Đối tác yêu cầu <span class="text-danger">(*)</span> : </div>
                                 <div class="col-md-8 value">
-                                    <select class="full-width select2-hidden-accessible input-sm" data-placeholder="Select Country" data-init-plugin="select2"
-                                        tabindex="-1" aria-hidden="true">
+                                    <select class="full-width select2-hidden-accessible input-sm" data-placeholder="Select Country" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
                                                     <option value="AK">Alaska</option>
                                                     <option value="HI">Hawaii</option>
                                                     <option value="CA">California</option>
@@ -2068,8 +2068,7 @@
                                     <div class="col-sm-6">
                                         <div class="form-group form-group-default form-group-default-select2 required">
                                             <label class="">Đối tác yêu cầu</label>
-                                            <select class="full-width select2-hidden-accessible" data-placeholder="Select Country" data-init-plugin="select2" tabindex="-1"
-                                                aria-hidden="true">
+                                            <select class="full-width select2-hidden-accessible" data-placeholder="Select Country" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
                                                     <option value="AK">Alaska</option>
                                                     <option value="HI">Hawaii</option>
                                                     <option value="CA">California</option>
@@ -2174,7 +2173,7 @@
                                         <tr>
                                             <td class="v-align-middle">1</td>
                                             <td class="v-align-middle">123EQW</td>
-                                            <td class="v-align-middle">Đình Loan</td>
+                                            <td class="v-align-middle"><a href="hoatdonggiamdinh-nhanvien.html">Đình Loan</a></td>
                                             <td class="v-align-middle">Đang giám định</td>
                                             <td class="v-align-middle">
                                                 <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Yêu cầu giám định </button></td>
@@ -2192,47 +2191,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <div class="panel-title">
-                                HOẠT ĐỘNG GIÁM ĐỊNH
-                            </div>
-                        </div>
-                        <div class="panel-body">
-                            <h7>Người đang thực hiện giám định</h7>
-                            <div class="table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>STT</th>
-                                            <th>Ngày</th>
-                                            <th>Mã nhân viên</th>
-                                            <th>Tên nhân viên</th>
-                                            <th>Chi tiết</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="v-align-middle">1</td>
-                                            <td class="v-align-middle">12/03/2017</td>
-                                            <td class="v-align-middle">123EQW</td>
-                                            <td class="v-align-middle">Đình Loan</td>
-                                            <td class="v-align-middle">
-                                                <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiTietCongViec"><i class="fa fa-edit"></i> Xem </button></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="v-align-middle">2</td>
-                                            <td class="v-align-middle">12/03/2017</td>
-                                            <td class="v-align-middle">456RQE</td>
-                                            <td class="v-align-middle">Nguyễn An</td>
-                                            <td class="v-align-middle">
-                                                <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiTietCongViec"><i class="fa fa-edit"></i> Xem </button></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="row">
                         <div class="col-sm-12 text-right">
                             <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
@@ -3036,17 +2995,23 @@
                                 <input type="text" class="form-control">
                             </div>
                             <div class="form-group">
+                                <label for="">Tài liệu</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
                                 <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
                             </div>
                         </form>
-                        <div class="table-responsive ">
+                        <div class="table table-responsive ">
                             <table class="table table-hover ">
                                 <thead>
                                     <tr>
-                                        <th style="width: 25%">STT</th>
+                                        <th style="width: 10%">STT</th>
                                         <th style="width: 25%">Công việc</th>
                                         <th style="width: 25%">Ngày giờ</th>
-                                        <th style="width: 25%">Mô tả</th>
+                                        <th style="width: 20%">Tên tài liệu</th>
+                                        <th style="width: 20%">File</th>
+                                        <th style="width: 10%">Mô tả</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -3054,6 +3019,8 @@
                                         <td class="v-align-middle ">1</td>
                                         <td class="v-align-middle ">Thêm giấy</td>
                                         <td class="v-align-middle ">9h30 12/03/2017</td>
+                                        <td class="v-align-middle ">ABCD</td>
+                                        <td class="v-align-middle "><a href=""><i class="fa fa-download"></i> tai-lieu-so-1.png</a></td>
                                         <td class="v-align-middle">
                                             <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Xem </button>
                                         </td>
@@ -3062,47 +3029,8 @@
                                         <td class="v-align-middle ">2</td>
                                         <td class="v-align-middle ">Hủy giấy</td>
                                         <td class="v-align-middle ">9h30 12/03/2017</td>
-                                        <td class="v-align-middle">
-                                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Xem </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <hr>
-
-                        <form role="form" lpformnum="2" class="form-filter">
-                            <div class="form-group">
-                                <label for="">Tài liệu</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
-                            </div>
-                        </form>
-                        <div class="table-responsive ">
-                            <table class="table table-hover ">
-                                <thead>
-                                    <tr>
-                                        <th style="width: 25%">STT</th>
-                                        <th style="width: 25%">Tên tài liệu</th>
-                                        <th style="width: 25%">Ngày giờ</th>
-                                        <th style="width: 25%">Mô tả</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="v-align-middle ">1</td>
-                                        <td class="v-align-middle ">Giấy xuất kho</td>
-                                        <td class="v-align-middle ">tai-lieu-1.png</td>
-                                        <td class="v-align-middle">
-                                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Xem </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="v-align-middle ">2</td>
-                                        <td class="v-align-middle ">Giấy </td>
-                                        <td class="v-align-middle ">tai-lieu-1.png</td>
+                                        <td class="v-align-middle ">ABC</td>
+                                        <td class="v-align-middle "><a href=""><i class="fa fa-download"></i> tai-lieu-so-1.png</a></td>
                                         <td class="v-align-middle">
                                             <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Xem </button>
                                         </td>
@@ -3122,6 +3050,7 @@
     </div>
 </div>
 <!-- END MODAL STICK UP  -->
+
 <!-- END MODAL STICK UP  -->
 <div class="modal fade stick-up " id="modalChinhSuaCongViec" role="dialog " aria-hidden="true " data-backdrop="static ">
     <div class="modal-dialog modal-lg ">
@@ -3264,10 +3193,12 @@
                             <table class="table table-hover ">
                                 <thead>
                                     <tr>
-                                        <th style="width: 25%">STT</th>
-                                        <th style="width: 25%">Công việc</th>
-                                        <th style="width: 25%">Ngày giờ</th>
-                                        <th style="width: 25%">Mô tả</th>
+                                        <th style="width: 5%">STT</th>
+                                        <th style="width: 20%">Công việc</th>
+                                        <th style="width: 20%">Ngày giờ</th>
+                                        <th style="width: 20%">Tài liệu</th>
+                                        <th style="width: 20%">File</th>
+                                        <th style="width: 15%">Mô tả</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -3275,6 +3206,8 @@
                                         <td class="v-align-middle ">1</td>
                                         <td class="v-align-middle ">Thêm giấy</td>
                                         <td class="v-align-middle ">9h30 12/03/2017</td>
+                                        <td class="v-align-middle ">ABC</td>
+                                        <td class="v-align-middle "><a href=""><i class="fa fa-download"></i> tai-lieu-so-1.png</a></td>
                                         <td class="v-align-middle">
                                             <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Xem </button>
                                         </td>
@@ -3283,13 +3216,15 @@
                                         <td class="v-align-middle ">2</td>
                                         <td class="v-align-middle ">Hủy giấy</td>
                                         <td class="v-align-middle ">9h30 12/03/2017</td>
+                                        <td class="v-align-middle ">ABC</td>
+                                        <td class="v-align-middle "><a href=""><i class="fa fa-download"></i> tai-lieu-so-1.png</a></td>
                                         <td class="v-align-middle">
                                             <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Xem </button>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="v-align-middle">
-                                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Thêm Thêm công việc</button>
+                                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalThemCongViec-TaiLieu"><i class="fa fa-edit"></i> Thêm công việc - Tài Liệu</button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -3297,50 +3232,8 @@
                         </div>
                         <hr>
 
-                        <form role="form" lpformnum="2" class="form-filter">
-                            <div class="form-group">
-                                <label for="">Tài liệu</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
-                            </div>
-                        </form>
-                        <div class="table-responsive ">
-                            <table class="table table-hover ">
-                                <thead>
-                                    <tr>
-                                        <th style="width: 25%">STT</th>
-                                        <th style="width: 25%">Tên tài liệu</th>
-                                        <th style="width: 25%">Ngày giờ</th>
-                                        <th style="width: 25%">Mô tả</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="v-align-middle ">1</td>
-                                        <td class="v-align-middle ">Giấy xuất kho</td>
-                                        <td class="v-align-middle ">tai-lieu-1.png</td>
-                                        <td class="v-align-middle">
-                                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Xem </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="v-align-middle ">2</td>
-                                        <td class="v-align-middle ">Giấy </td>
-                                        <td class="v-align-middle ">tai-lieu-1.png</td>
-                                        <td class="v-align-middle">
-                                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Xem </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="v-align-middle">
-                                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Thêm tài liệu</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+
+
                     </div>
                 </div>
 
@@ -3483,8 +3376,7 @@
                             <div class="row  m-b-15">
                                 <div class="col-md-5  name "> Đối tác yêu cầu</div>
                                 <div class="col-md-7 value">
-                                    <select class="full-width select2-hidden-accessible input-sm" data-placeholder="" data-init-plugin="select2" tabindex="-1"
-                                        aria-hidden="true">
+                                    <select class="full-width select2-hidden-accessible input-sm" data-placeholder="" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
                                                           <option value="AK">Alaska</option>
                                                           <option value="HI">Hawaii</option>
                                                           <option value="CA">California</option>
@@ -3723,6 +3615,80 @@
 <!-- END MODAL STICK UP  -->
 
 <!-- MODAL STICK UP  -->
+
+<div class="modal fade stick-up" id="modalThemCongViec-TaiLieu" data-backdrop="static" role="dialog" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content ">
+            <div class="modal-header clearfix text-left ">
+                <button type="button " class="close " data-dismiss="modal " aria-hidden="true "><i class="pg-close fs-14 "></i>
+                </button>
+                <h5><span class="semi-bold ">Thêm công việc -Tài liệu</span></h5>
+            </div>
+            <div class="modal-body ">
+                <label>Thêm mới công việc</label>
+                <div class="panel-default">
+                    <div class="panel-body">
+                        <div class="panel-heading">
+                            <div class="row">
+
+                                <div class="form-group">
+                                    <label for="">Công việc</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="">Mô tả</label>
+                                    <textarea type="text" class="form-control"></textarea>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <label>Thêm mới tài liệu</label>
+
+                    <div class="panel-body">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="">Tài liệu</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="">File</label>
+                                    <input type="file" class="form-control">
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-right form-group">
+
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i></i> Đóng</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i></i> Lưu</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL STICK UP  -->
+<!-- MODAL STICK UP  -->
 <div class="modal fade stick-up" id="modalTaoMoiHoaDon" role="dialog" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -3762,8 +3728,7 @@
                             <div class="row  m-b-15">
                                 <div class="col-md-5  name "> Đối tác yêu cầu</div>
                                 <div class="col-md-7 value">
-                                    <select class="full-width select2-hidden-accessible input-sm" data-placeholder="" data-init-plugin="select2" tabindex="-1"
-                                        aria-hidden="true">
+                                    <select class="full-width select2-hidden-accessible input-sm" data-placeholder="" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
                                                           <option value="AK">Alaska</option>
                                                           <option value="HI">Hawaii</option>
                                                           <option value="CA">California</option>
@@ -4041,8 +4006,7 @@
                             <div class="row  m-b-15">
                                 <div class="col-md-5  name "> Đối tác yêu cầu</div>
                                 <div class="col-md-7 value">
-                                    <select class="full-width select2-hidden-accessible input-sm" data-placeholder="" data-init-plugin="select2" tabindex="-1"
-                                        aria-hidden="true">
+                                    <select class="full-width select2-hidden-accessible input-sm" data-placeholder="" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
                                                           <option value="AK">Alaska</option>
                                                           <option value="HI">Hawaii</option>
                                                           <option value="CA">California</option>
@@ -4319,8 +4283,7 @@
                             <div class="row  m-b-15">
                                 <div class="col-md-5  name "> Đối tác yêu cầu</div>
                                 <div class="col-md-7 value">
-                                    <select class="full-width select2-hidden-accessible input-sm" data-placeholder="" data-init-plugin="select2" tabindex="-1"
-                                        aria-hidden="true">
+                                    <select class="full-width select2-hidden-accessible input-sm" data-placeholder="" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
                                                           <option value="AK">Alaska</option>
                                                           <option value="HI">Hawaii</option>
                                                           <option value="CA">California</option>
