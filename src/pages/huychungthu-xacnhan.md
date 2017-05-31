@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "huychungthu-xacnhan.html",
     "permalink" : false,
-    "activeLink" : ""
+    "activeLink" : "chungthu"
 }
 ---
 

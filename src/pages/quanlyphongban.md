@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "quanlyphongban.html",
     "permalink" : false,
-    "activeLink" : "quanlyphongban"
+    "activeLink" : "phongban"
 }
 ---
 

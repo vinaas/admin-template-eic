@@ -5,6 +5,6 @@
     "description": "Index Page",
     "layout": "danhsachhoadon.html",
     "permalink" : false,
-    "activeLink" : ""
+    "activeLink" : "hoadon"
 }
 ---

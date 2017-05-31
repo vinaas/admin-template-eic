@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "quanlychitieu-ds.html",
     "permalink" : false,
-    "activeLink" : "quanlychitieu"
+    "activeLink" : "chitieu"
 }
 ---
 

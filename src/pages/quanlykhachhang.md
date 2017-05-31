@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "quanlykhachhang.html",
     "permalink" : false,
-    "activeLink" : "quanlykhachhang"
+    "activeLink" : "khachhang"
 }
 ---
 

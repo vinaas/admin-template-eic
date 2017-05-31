@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "giamdinhvien.html",
     "permalink" : false,
-    "activeLink" : ""
+    "activeLink" : "giamdinhvien"
 }
 ---
 

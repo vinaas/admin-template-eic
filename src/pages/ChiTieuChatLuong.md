@@ -5,6 +5,6 @@
     "description": "Index Page",
     "layout": "ChiTieuChatLuong.html",
     "permalink" : false,
-    "activeLink" : ""
+    "activeLink" : "chitieu"
 }
 ---

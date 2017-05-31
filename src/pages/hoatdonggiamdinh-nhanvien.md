@@ -5,7 +5,7 @@
     "description": "Index Page",
     "layout": "hoatdonggiamdinh-nhanvien.html",
     "permalink" : false,
-    "activeLink" : ""
+    "activeLink" : "giamdinh"
 }
 ---
 
