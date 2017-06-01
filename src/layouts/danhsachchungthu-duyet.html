@@ -1,10 +1,8 @@
 {{#extend "default"}} {{#content "main"}}
 <br>
 <div class="container-fluid container-fixed-lg">
-    <!-- BEGIN PlACE PAGE CONTENT HERE -->
-    <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
-        <div class="col-sm-7">
+        <div class="col-sm-8">
             <h3 class="page-title">{{title}}</h3>
         </div>
     </div>
@@ -12,127 +10,139 @@
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>Mã chứng thư</label>
-                                <input type="email" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label>Mã đối tác</label>
-                                <input type="email" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm
-                            </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
+                    <li class="active"><a href="#tabDuyetChungThu" data-toggle="tab" role="tab">Duyệt chứng thư</a>
+                    </li>
 
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <div class="pull-right m-b-10">
-                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
+                    <li><a href="#tabDuyetHuyChungThu" data-toggle="tab" role="tab">Duyệt hủy chứng thư</a>
+                    </li>
 
-                <div class="panel-body">
-                    <div class="table-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>STT</th>
-                                    <th>Mã chứng thư</th>
-                                    <th>Mã đối tác</th>
-                                    <th>Đối tác yêu cầu</th>
-                                    <th>Phòng ban</th>
-                                    <th>Người yêu cầu</th>
-                                    <th>Giám định viên</th>
-                                    <th>Thời gian</th>
-                                    <th>Chi tiết</th>
-                                    <th>Lý do</th>
-                                    <th>Hành động</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="v-align-middle">1</td>
-                                    <td class="v-align-middle">123EWQ</td>
-                                    <td class="v-align-middle">123QWE</td>
-                                    <td class="v-align-middle">ABC</td>
-                                    <td class="v-align-middle">Phòng Năng lượng</td>
-                                    <td class="v-align-middle">Nguyễn An</td>
-                                    <td class="v-align-middle">Nguyễn Văn A</td>
-                                    <td class="v-align-middle">12/03/2017</td>
-                                    <td class="v-align-middle">
-                                        <a href="" class="text-primary" data-toggle="modal" data-target="#"><i class="fa fa-info-circle"></i> Xem</a>
-                                    </td>
-                                    <td class="v-align-middle">
-                                        <a href="" class="text-primary" data-toggle="modal" data-target="#modalHuyChungThu-LyDo"><i class="fa fa-exclamation-circle"></i> Xem</a>
-                                    </td>
-                                    <td class="v-align-middle">
-                                        <div class="btn-group sm-m-t-10">
-                                            <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash"></i> Từ chối hủy</button>
-                                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Xác nhận hủy</button>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tabDuyetChungThu">
+
+                    </div>
+
+                    <div class="tab-pane" id="tabDuyetHuyChungThu">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Mã chứng thư</label>
+                                            <input type="email" class="form-control">
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="v-align-middle">2</td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                </tr>
-                                <tr>
-                                    <td class="v-align-middle">3</td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                    <td class="v-align-middle"></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Mã đối tác</label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th>Mã chứng thư</th>
+                                                <th>Mã đối tác</th>
+                                                <th>Đối tác yêu cầu</th>
+                                                <th>Phòng ban</th>
+                                                <th>Người yêu cầu</th>
+                                                <th>Giám định viên</th>
+                                                <th>Thời gian</th>
+                                                <th>Chi tiết</th>
+                                                <th>Lý do</th>
+                                                <th>Hành động</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">1</td>
+                                                <td class="v-align-middle">123EWQ</td>
+                                                <td class="v-align-middle">123QWE</td>
+                                                <td class="v-align-middle">ABC</td>
+                                                <td class="v-align-middle">Phòng Năng lượng</td>
+                                                <td class="v-align-middle">Nguyễn An</td>
+                                                <td class="v-align-middle">Nguyễn Văn A</td>
+                                                <td class="v-align-middle">12/03/2017</td>
+                                                <td class="v-align-middle">
+                                                    <a href="" class="text-primary" data-toggle="modal" data-target="#"><i class="fa fa-info-circle"></i> Xem</a>
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    <a href="" class="text-primary" data-toggle="modal" data-target="#modalHuyChungThu-LyDo"><i class="fa fa-exclamation-circle"></i> Xem</a>
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    <div class="btn-group sm-m-t-10">
+                                                        <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash"></i> Từ chối hủy</button>
+                                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i> Xác nhận hủy</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="v-align-middle">2</td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="v-align-middle">3</td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                                <td class="v-align-middle"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
 
 
-                        {{>pagination}}
+                                    {{>pagination}}
 
 
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
-
-
-
     </div>
-
 </div>
 
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
