@@ -916,6 +916,8 @@
             <div class="modal-body">
             </div>
         </div>
+
+
     </div>
 </div>
 <!-- END MODAL STICK UP  -->
@@ -927,10 +929,145 @@
             <div class="modal-header clearfix text-left">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i></button>
                 <h3 class="text-center m-t-20 m-b-20">
-                    CHỨNG THƯ GIÁM ĐỊNH
+                    CHỨNG THƯ GIÁM ĐỊNH VỀ NIÊM PHONG HÀNG HÓA
                 </h3>
             </div>
             <div class="modal-body">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h5>Tạo mới <span class="semi-bold">Chứng thư</span></h5>
+                        <form role="form" class="desModalForm">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="row  m-b-15">
+                                        <div class="col-md-4  name m-t-5"> Số (No) : </div>
+                                        <div class="col-md-8 value">
+                                            <input type="text" class="form-control input-sm " name="" value="123">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="row  m-b-15">
+                                        <div class="col-md-4  name m-t-5"> Ngày (Date) : </div>
+                                        <div class="col-md-8 value">
+                                            <div class="input-group">
+                                                <input type="email" class="form-control desdatepicker input-sm" placeholder="Pick a date">
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-title">Thông tin giám định</div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row  m-b-15">
+                                        <div class="col-md-4  name m-t-5"> Người yêu cầu (Applicant) : </div>
+                                        <div class="col-md-8 value">
+                                            <input type="text" class="form-control" value="Nguyễn Văn A">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row  m-b-15">
+                                        <div class="col-md-4  name m-t-5">Cảng xếp hàng (Port of Loading) : </div>
+                                        <div class="col-md-8 value">
+                                            <input type="text" class="form-control" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row  m-b-15">
+                                        <div class="col-md-4  name m-t-5">Hàng hóa khai báo (Declared cargo) : </div>
+                                        <div class="col-md-8 value">
+                                            <input type="text" class="form-control" value="Diêzen Do 0.05%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row  m-b-15">
+                                        <div class="col-md-4  name m-t-5">Cảng dỡ hàng (Port of Discharge) : </div>
+                                        <div class="col-md-8 value">
+                                            <input type="text" class="form-control" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row  m-b-15">
+                                        <div class="col-md-4  name m-t-5">Tên tàu (Name of ship) : </div>
+                                        <div class="col-md-8 value">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row  m-b-15">
+                                        <div class="col-md-4  name m-t-5">Ngày yêu cầu giám định (Date of inspection request) : </div>
+                                        <div class="col-md-8 value">
+                                            <div class="input-group">
+                                                <input type="email" class="form-control desdatepicker input-sm" placeholder="Pick a date">
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row  m-b-15">
+                                        <div class="col-md-4  name m-t-5"> Thời gian giám định (Time of Expertise) : </div>
+                                        <div class="col-md-8 value">
+                                            <div class="input-daterange input-group col-md-12" id="datepicker-range">
+                                                <input type="text" class="input-sm form-control" name="start">
+                                                <span class="input-group-addon input-sm">Đến (To)</span>
+                                                <input type="text" class="input-sm form-control" name="end">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="row  m-b-15">
+                                        <div class="col-md-4  name m-t-5">Địa điểm giám định (Place of survey) : </div>
+                                        <div class="col-md-8 value">
+                                            <textarea rows="" cols="" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h5>Kết quả thí nghiệm</h5>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="summernote-wrapper">
+                                    <div class="summernote">Kết quả</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 m-t-10 text-right">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
+                                <button type="button" class="btn btn-primary"><i class="fa fa-save"></i> Lưu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
