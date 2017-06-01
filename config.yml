@@ -48,8 +48,10 @@ PATHS:
     - "src/assets/plugins/select2/js/select2.full.min.js"
     - "src/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"
     - "src/assets/plugins/jquery-autonumeric/autoNumeric.js"
+    - "src/assets/plugins/summernote/js/summernote.min.js"
     
     - "bower_components/sweetalert/dist/sweetalert.min.js"
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"
+
