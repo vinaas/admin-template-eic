@@ -11,14 +11,14 @@
 
 
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-sm-6">
+                <div class="panel-body">
+                    <div class="row">
                         <label>Tên bộ chỉ tiêu</label>
                         <div class="form-group form-group-default">
                             <input type="text" class="form-control" name="firstName" required="" aria-required="true">
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="row">
                         <label>Ngày</label>
                         <div class="form-group ">
                             <div id="datepicker-component" class="input-group date">
@@ -27,15 +27,26 @@
 
                         </div>
                     </div>
+
+                    <div class="row">
+                        <label>Loại tiêu chuẩn</label>
+                        <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                    <option value="MO">Theo tiêu chuẩn EURO</option>
+                                    <option value="OK">Đối với nhiên liệu đốt lò</option>
+                                    <option value="SD">Theo định mức</option>
+                            </select>
+                    </div>
+
                 </div>
+
+
                 <div class="row">
                     <div class="col-sm-6"></div>
                     <div class="col-sm-6 text-right">
-                        <button type="button" class="btn btn-danger m-t-25" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
-                        <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-plus"></i> Thêm mới</button>
+                        <button type="button" class="btn btn-danger btn-cons m-t-25" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
+                        <button class="btn btn-primary  m-t-25" type="button"><i class="fa fa-plus"></i> Thêm mới</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -53,16 +64,15 @@
                 <!--<p>Các lưu ý cho nhân viên khi tạo mới hợp đồng</p>-->
             </div>
 
-
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-sm-6">
+                <div class="panel-body">
+                    <div class="row">
                         <label>Tên bộ chỉ tiêu</label>
                         <div class="form-group form-group-default">
                             <input type="text" class="form-control" name="firstName" required="" aria-required="true">
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="row">
                         <label>Ngày</label>
                         <div class="form-group ">
                             <div id="datepicker-component" class="input-group date">
@@ -71,16 +81,28 @@
 
                         </div>
                     </div>
+
+                    <div class="row">
+                        <label>Loại tiêu chuẩn</label>
+                        <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                    <option value="MO">Theo tiêu chuẩn EURO</option>
+                                    <option value="OK">Đối với nhiên liệu đốt lò</option>
+                                    <option value="SD">Theo định mức</option>
+                            </select>
+                    </div>
+
                 </div>
+
+
                 <div class="row">
                     <div class="col-sm-6"></div>
                     <div class="col-sm-6 text-right">
-                        <button type="button" class="btn btn-danger m-t-25" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
-                        <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-save"></i> Lưu</button>
+                        <button type="button" class="btn btn-danger btn-cons m-t-25" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
+                        <button class="btn btn-primary  m-t-25" type="button"><i class="fa fa-save"></i> Lưu</button>
                     </div>
                 </div>
-
             </div>
+
         </div>
     </div>
 </div>
