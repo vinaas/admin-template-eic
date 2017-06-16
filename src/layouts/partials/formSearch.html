@@ -200,27 +200,18 @@
 <div class="panel panel-default">
     <div class="panel-body">
         <div class="row">
-            <div class="col-md-3">
-                <div class="form-group">
-                    <label>Loại hình</label>
-                    <select class="full-width select2-hidden-accessible" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
-                               <option value="">Giám định số lượng</option>
-                               <option value="">Giám định chất lượng</option>
-                            </select>
-                </div>
-            </div>
             <div class="col-md-2">
                 <div class="form-group">
                     <label for="">Tên khách hàng</label>
-                    <input type="text" class="form-control">
+                    <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                            <option value="1">Nguyễn Văn A</option>
+                            <option value="2">Nguyễn Văn B</option>
+                            <option value="3">Nguyễn Văn C</option>
+                            <option value="4">Nguyễn Văn D</option>
+                    </select>
                 </div>
             </div>
-            <div class="col-md-2">
-                <div class="form-group">
-                    <label for="">Số chứng thư</label>
-                    <input type="text" class="form-control">
-                </div>
-            </div>
+
             <div class="col-md-2">
                 <div class="form-group">
                     <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm
@@ -229,12 +220,38 @@
             </div>
         </div>
 
-
-
-
     </div>
 </div>
 
+{{/ifEqual}} {{#ifEqual type "HoaDonKhachHang-ChiTiet"}}
 
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="">Loại hình giám định</label>
+                    <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                            <option value="1">Giám định chất lượng</option>
+                            <option value="2">Giám định số lượng</option>
+                            <option value="3">Giám định hàng hải</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="">Số chứng thư</label>
+                    <input type="text" class="form-control" id="" placeholder="Nhập số chứng thư ..">
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="form-group">
+                    <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm
+                            </button>
+                </div>
+            </div>
+        </div>
+
+<br>
 
 {{/ifEqual}}
