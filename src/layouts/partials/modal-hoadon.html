@@ -278,6 +278,101 @@
 <!-- END MODAL STICK UP  -->
 
 <!-- MODAL STICK UP  -->
+<div class="modal fade stick-up" id="modalHoaDonKhachHang-ChiTiet" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                </button>
+                <h5>Danh sách <span class="semi-bold">Hóa đơn</span></h5>
+                <hr>
+            </div>
+            <div class="modal-body">
+                <div class="panel-body">
+                    {{>formSearch type="HoaDonKhachHang-ChiTiet"}}
+                    <button type="button" class="btn btn-primary"><i class="fa fa-print"></i> In hóa đơn</button>
+
+                    <div class="pull-right m-b-10">
+                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th style="width: 50px;padding: 10px 11px !important;">
+                                        <div class="checkbox check-primary">
+                                            <input type="checkbox" value="3" id="checkbox1">
+                                            <label for="checkbox1" class="m-r-0"></label>
+                                        </div>
+                                    </th>
+                                    <th>STT</th>
+                                    <th>Số chứng thư</th>
+                                    <th>Loại hình giám định</th>
+                                    <th>Chi tiết</th>
+                                    <th class="v-align-middle">Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <div class="checkbox check-primary ">
+                                            <input type="checkbox" value="3" id="checkbox2">
+                                            <label for="checkbox2" class="m-r-0"></label>
+                                        </div>
+                                    </td>
+                                    <td class="v-align-middle">1</td>
+                                    <td class="v-align-middle">123</td>
+                                    <td class="v-align-middle">Giám định số lượng</td>
+                                    <td class="v-align-middle">
+                                        <a href="" class="text-primary" data-toggle="modal" data-target="#modalChiTietHoaDon"><i class="fa fa-info-circle"></i> Xem</a>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <div class="btn-group sm-m-t-10">
+                                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalXuatInvoicesNhap"><i class="fa fa-file"></i> Xuất hóa đơn</button>
+                                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChinhSuaHoaDon"><i class="fa fa-edit"></i> Chỉnh sữa</button>
+                                            <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <div class="checkbox check-primary ">
+                                            <input type="checkbox" value="3" id="checkbox3">
+                                            <label for="checkbox3" class="m-r-0"></label>
+                                        </div>
+                                    </td>
+                                    <td class="v-align-middle">2</td>
+                                    <td class="v-align-middle">124</td>
+                                    <td class="v-align-middle">Giám định chất lượng</td>
+                                    <td class="v-align-middle">
+                                        <a href="" class="text-primary" data-toggle="modal" data-target="#modalChiTietHoaDon"><i class="fa fa-info-circle"></i> Xem</a>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <div class="btn-group sm-m-t-10">
+                                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalXuatInvoicesNhap"><i class="fa fa-file"></i> Xuất hóa đơn</button>
+                                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChinhSuaHoaDon"><i class="fa fa-edit"></i> Chỉnh sữa</button>
+                                            <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        {{>pagination}}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL STICK UP  -->
+
+<!-- MODAL STICK UP  -->
 <div class="modal fade stick-up" id="modalChiTietHoaDon" role="dialog" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -285,7 +380,6 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
                 </button>
                 <h5>Chi tiết <span class="semi-bold">Hóa đơn</span></h5>
-                <!--<p>Các lưu ý cho nhân viên khi tạo mới hợp đồng</p>-->
             </div>
             <div class="modal-body">
                 <form role="form" class="desModalForm">
@@ -513,12 +607,12 @@
                             <div class="col-md-5  name m-t-5">Hình thức thanh toán</div>
                             <div class="col-md-7">
                                 <div class="radio radio-primary">
-                                    <input type="radio" value="male" name="optionyes" id="TienMat" aria-invalid="false">
-                                    <label for="TienMat">Tiền mặt (Cash)</label>
-                                    <input type="radio" checked="checked" value="female" name="optionyes" id="ChuyenKhoan" aria-invalid="false">
-                                    <label for="ChuyenKhoan">Chuyển khoản (Bank tranfers)</label>
-                                    <input type="radio" checked="checked" value="female" name="optionyes" id="Other" aria-invalid="false">
-                                    <label for="Other">Khác (Other)</label>
+                                    <input type="radio" value="male" name="optionyes" id="TienMat1" aria-invalid="false">
+                                    <label for="TienMat1">Tiền mặt (Cash)</label>
+                                    <input type="radio" checked="checked" value="female" name="optionyes" id="ChuyenKhoan1" aria-invalid="false">
+                                    <label for="ChuyenKhoan1">Chuyển khoản (Bank tranfers)</label>
+                                    <input type="radio" checked="checked" value="female" name="optionyes" id="Other1" aria-invalid="false">
+                                    <label for="Other1">Khác (Other)</label>
                                 </div>
                             </div>
                         </div>
@@ -842,7 +936,6 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
                 </button>
                 <h5>Xuất<span class="semi-bold"> Hóa đơn</span></h5>
-                <!--<p>Các lưu ý cho nhân viên khi tạo mới hợp đồng</p>-->
             </div>
             <div class="modal-body">
                 <form role="form" class="desModalForm">
@@ -1104,7 +1197,7 @@
                 </div>
                 <div class="text-right m-t-20">
                     <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
-                    <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#">Thực hiện</button>
+                    <button type="button" class="btn btn-primary  m-t-5" data-toggle="modal" data-target="#"><i class="fa fa-check"></i> Thực hiện</button>
                 </div>
 
             </div>
