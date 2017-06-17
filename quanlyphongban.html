@@ -369,267 +369,276 @@
       <!-- START PAGE CONTENT -->
       <div class="content">
         <!-- START JUMBOTRON -->
-        
+         
 <br>
 <div class="container-fluid container-fixed-lg">
-  <div class="row">
-    <div class="col-sm-8">
-      <h3 class="page-title">Quản lý phòng ban</h3>
+    <div class="row">
+        <div class="col-sm-8">
+            <h3 class="page-title">Quản lý phòng ban</h3>
+        </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-12">
-      <div class="panel panel-default">
-        <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
-          <li class="active"><a href="#tabPhongBan" data-toggle="tab" role="tab">Phòng ban</a>
-          </li>
-
-          <li><a href="#tabNhanVien" data-toggle="tab" role="tab">Nhân viên</a>
-          </li>
-
-        </ul>
-
-        <div class="tab-content">
-          <div class="tab-pane active" id="tabPhongBan">
+    <div class="row">
+        <div class="col-md-12">
             <div class="panel panel-default">
-              <div class="panel-body">
+                <ul class="nav nav-tabs nav-tabs-simple nav-tabs-primary " role="tablist" data-init-reponsive-tabs="collapse">
+                    <li class="active"><a href="#tabPhongBan" data-toggle="tab" role="tab">Phòng ban</a>
+                    </li>
+                    <li><a href="#tabNhanVien" data-toggle="tab" role="tab">Nhân viên</a>
+                    </li>
+                    <li><a href="#tabNghiepVu" data-toggle="tab" role="tab">Ngiệp vụ</a>
+                    </li>
+                </ul>
 
-                <button class="btn btn-default btn-sm m-b-10  m-t-5 text-primary" type="button" data-toggle="modal" data-target="#modalPhongBan"><i class="fa fa-file"></i> Tạo mới
-                </button>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tabPhongBan">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <button class="btn btn-default btn-sm m-b-10  m-t-5 text-primary" type="button" data-toggle="modal" data-target="#modalPhongBan"><i class="fa fa-file"></i> Tạo mới</button>
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                                <div class=" table table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th>Tên phòng ban</th>
+                                                <th>Mã phòng ban</th>
+                                                <th>Chi tiết</th>
+                                                <th>Hành động</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    1
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    Phòng năng lượng
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    123QWE
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    <a href="" class="text-primary" data-toggle="modal" data-target="#modalXemPhongBan"><i class="fa fa-user-circle-o"></i> Xem</a>
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    <div class="btn-group sm-m-t-10">
+                                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalPhongBan"><i class="fa fa-edit"></i> Chỉnh sữa</button>
+                                                        <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    2
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    Phòng hàng hải
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    123QWE
+                                                </td>
 
-                <div class="pull-right m-b-10">
-                  <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
-                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
-                  </div>
-                </div>
-                <div class=" table table-responsive">
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th>STT</th>
-                        <th>Tên phòng ban</th>
-                        <th>Mã phòng ban</th>
-                        <th>Chi tiết</th>
-                        <th>Hành động</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="v-align-middle">
-                          1
-                        </td>
-                        <td class="v-align-middle">
-                          Phòng năng lượng
-                        </td>
-                        <td class="v-align-middle">
-                          123QWE
-                        </td>
-                        <td class="v-align-middle">
-                          <a href="" class="text-primary" data-toggle="modal" data-target="#modalXemPhongBan"><i class="fa fa-user"></i> Xem</a>
-                        </td>
-                        <td class="v-align-middle">
-                          <div class="btn-group sm-m-t-10">
-                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalPhongBan"><i class="fa fa-edit"></i> Chỉnh sữa</button>
-                            <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="v-align-middle">
-                          2
-                        </td>
-                        <td class="v-align-middle">
-                          Phòng hàng hải
-                        </td>
-                        <td class="v-align-middle">
-                          123QWE
-                        </td>
+                                                <td class="v-align-middle">
+                                                    <a href="" class="text-primary" data-toggle="modal" data-target="#modalXemPhongBan"><i class="fa fa-user-circle-o"></i> Xem</a>
+                                                </td>
 
-                        <td class="v-align-middle">
-                          <a href="" class="text-primary" data-toggle="modal" data-target="#modalXemPhongBan"><i class="fa fa-user"></i> Xem</a>
-                        </td>
+                                                <td class="v-align-middle">
 
-                        <td class="v-align-middle">
-
-                          <div class="btn-group sm-m-t-10">
-                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalPhongBan"><i class="fa fa-edit"></i> Chỉnh sữa</button>
-                            <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                          </div>
+                                                    <div class="btn-group sm-m-t-10">
+                                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalPhongBan"><i class="fa fa-edit"></i> Chỉnh sữa</button>
+                                                        <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                                    </div>
 
 
-                        </td>
+                                                </td>
 
-                      </tr>
+                                            </tr>
 
-                    </tbody>
-                  </table>
+                                        </tbody>
+                                    </table>
+                                    <nav aria-label="Page navigation" class="text-center">
+                                      <ul class="pagination">
+                                        <li>
+                                          <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true"> <i class="fa fa-angle-left"></i> </span>
+                                          </a>
+                                        </li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li>
+                                          <a href="#" aria-label="Next">
+                                            <span aria-hidden="true"> <i class="fa fa-angle-right"></i> </span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </nav>                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                  <nav aria-label="Page navigation" class="text-center">
-                    <ul class="pagination">
-                      <li>
-                        <a href="#" aria-label="Previous">
-                          <span aria-hidden="true"> <i class="fa fa-angle-left"></i> </span>
-                        </a>
-                      </li>
-                      <li><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li>
-                        <a href="#" aria-label="Next">
-                          <span aria-hidden="true"> <i class="fa fa-angle-right"></i> </span>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
+                    <div class="tab-pane" id="tabNhanVien">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h5 class="m-t-0">
+                                    Tìm kiếm
+                                </h5>
+                                <form role="form" lpformnum="2" class="form-filter">
+                                    <div class="form-group">
+                                        <label>Phòng ban</label>
 
-          <div class="tab-pane" id="tabNhanVien">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <h5 class="m-t-0">
-                  Tìm kiếm
-                </h5>
-                <form role="form" lpformnum="2" class="form-filter">
-
-                  <div class="form-group">
-                    <label>Phòng ban</label>
-
-                    <select class="full-width" data-init-plugin="select2" data-placeholder="">
+                                        <select class="full-width" data-init-plugin="select2" data-placeholder="">
                                             <option value=""></option>
                                             <option value="AK">Phòng năng lượng</option>
                                             <option value="AK">Phòng hàng hải</option>
                                         </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="">Tên nhân viên</label>
-                    <input type="text" class="form-control " name="" value="">
-                  </div>
-                  <div class="form-group">
-                    <label for="">Mã nhân viên</label>
-                    <input type="text" class="form-control " name="" value="">
-                  </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Tên nhân viên</label>
+                                        <input type="text" class="form-control " name="" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Mã nhân viên</label>
+                                        <input type="text" class="form-control " name="" value="">
+                                    </div>
 
-                  <div class="form-group">
+                                    <div class="form-group">
+                                        <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
 
-                    <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <button class="btn btn-default btn-sm   text-primary" type="button" data-toggle="modal" data-target="#modalThemNhanVien"><i class="fa fa-user-plus"></i> Thêm nhân viên</button>
+                                <div class="pull-right m-b-10">
+                                    <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                                        <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th>Tên nhân viên</th>
+                                                <th>Mã nhân viên</th>
+                                                <th>Chức vụ</th>
+                                                <th>Chi tiết</th>
+                                                <th>Hành động</th>
+                                                <th>Trạng thái</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
 
-                  </div>
-                </form>
+                                                <td class="v-align-middle">
+                                                    1
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    Nguyen Van A
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    123QWE
+                                                </td>
 
+                                                <td class="v-align-middle">
+                                                    Trưởng phòng
+                                                </td>
 
-              </div>
+                                                <td class="v-align-middle">
+                                                    <a href="" class="text-primary" data-toggle="modal" data-target="#modalHoSoNhanVien"><i class="fa fa-user-circle-o"></i> Xem</a>
+                                                </td>
 
+                                                <td class="v-align-middle">
+                                                    <div class="btn-group sm-m-t-10">
+                                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalThemNhanVien"><i class="fa fa-edit"></i> Chỉnh sữa</button>
+                                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChuyenPhongBan"><i class="fa fa-edit"></i> Chuyển phòng ban</button>
+                                                        <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                                    </div>
+                                                </td>
 
-            </div>
+                                                <td class="v-align-middle">
+                                                    <input type="checkbox" data-init-plugin="switchery" data-size="small" data-color="primary" checked="checked" />
+                                                </td>
 
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <button class="btn btn-default btn-sm   text-primary" type="button" data-toggle="modal" data-target="#modalNhanVien"><i class="fa fa-user-plus"></i> Thêm nhân viên
-                </button>
-                <div class="pull-right m-b-10">
-                  <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
-                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
-                  </div>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <nav aria-label="Page navigation" class="text-center">
+                                      <ul class="pagination">
+                                        <li>
+                                          <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true"> <i class="fa fa-angle-left"></i> </span>
+                                          </a>
+                                        </li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li>
+                                          <a href="#" aria-label="Next">
+                                            <span aria-hidden="true"> <i class="fa fa-angle-right"></i> </span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </nav>                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tabNghiepVu">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="clearfix"></div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th>Tên phòng ban</th>
+                                                <th>Chi tiết</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="v-align-middle">
+                                                    1
+                                                </td>
+                                                <td class="v-align-middle">
+                                                    Phòng Năng lượng
+                                                </td>
+
+                                                <td class="v-align-middle">
+                                                    <a href="" class="text-primary" data-toggle="modal" data-target="#modalNghiepVu"><i class="fa fa-user-circle-o"></i> Xem</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="clearfix"></div>
-                <div class="table-responsive">
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-
-
-                        <th>STT</th>
-                        <th>Tên nhân viên</th>
-                        <th>Mã nhân viên</th>
-                        <th>Chức vụ</th>
-                        <th>Chi tiết</th>
-                        <th>Hồ sơ</th>
-                        <th>Hành động</th>
-                        <th>Trạng thái</th>
-
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-
-                        <td class="v-align-middle">
-                          1
-                        </td>
-                        <td class="v-align-middle">
-                          Nguyen Van A
-                        </td>
-                        <td class="v-align-middle">
-                          123QWE
-                        </td>
-
-                        <td class="v-align-middle">
-                          Trưởng phòng
-                        </td>
-
-                        <td class="v-align-middle">
-                          <a href="" class="text-primary" data-toggle="modal" data-target="#modalNhanVien"><i class="fa fa-user-circle-o"></i> Xem</a>
-                        </td>
-
-                        <td class="v-align-middle">
-                          <a href="" class="text-primary" data-toggle="modal" data-target="#modalNhanVien"><i class="fa fa-file-archive-o"></i> Xem hồ sơ</a>
-                        </td>
-
-                        <td class="v-align-middle">
-
-                          <div class="btn-group sm-m-t-10">
-                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalNhanVien"><i class="fa fa-edit"></i> Chỉnh sữa
-                                            <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChuyenPhongBan"><i class="fa fa-edit"></i> Chuyển phòng ban</button>
-                            <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                          </div>
-
-
-                        </td>
-
-                        <td class="v-align-middle">
-
-                          <input type="checkbox" data-init-plugin="switchery" data-size="small" data-color="primary" checked="checked" />
-                        </td>
-
-                      </tr>
-
-                    </tbody>
-                  </table>
-                  <nav aria-label="Page navigation" class="text-center">
-                    <ul class="pagination">
-                      <li>
-                        <a href="#" aria-label="Previous">
-                          <span aria-hidden="true"> <i class="fa fa-angle-left"></i> </span>
-                        </a>
-                      </li>
-                      <li><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li>
-                        <a href="#" aria-label="Next">
-                          <span aria-hidden="true"> <i class="fa fa-angle-right"></i> </span>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 </div>
 
 
@@ -804,7 +813,7 @@
                                       </td>
       
                                       <td class="v-align-middle">
-                                          <a href="" class="text-primary" data-toggle="modal" data-target="#modalHoSoNhanVien"><i class="fa fa-file-archive-o"></i> Xem hồ sơ</a>
+                                          <a href="" class="text-primary" data-toggle="modal" data-target="#modalHoSoNhanVien"><i class="fa fa-user-circle-o"></i> Chi tiết</a>
                                       </td>
       
       
@@ -873,7 +882,7 @@
       <!-- END MODAL STICK UP  -->
       
       <!-- MODAL STICK UP  -->
-      <div class="modal fade stick-up" id="modalNhanVien" role="dialog" aria-hidden="true" data-backdrop="static">
+      <div class="modal fade stick-up" id="modalThemNhanVien" role="dialog" aria-hidden="true" data-backdrop="static">
           <div class="modal-dialog modal-lg">
               <div class="modal-content">
                   <div class="modal-header clearfix text-left">
@@ -885,64 +894,50 @@
                   </div>
                   <div class="modal-body">
                       <form role="form" class="desModalForm">
-      
-      
                           <div class="row">
                               <div class="col-md-6">
                                   <div class="row  m-b-15">
-                                      <div class="col-md-4  name m-t-5">Cho phép đăng nhập: </div>
+                                      <div class="col-md-4  name m-t-5">Cho phép đăng nhập : </div>
                                       <div class="col-md-8 value">
-      
                                           <input type="checkbox" data-init-plugin="switchery" data-size="small" data-color="primary" checked="checked" />
                                       </div>
                                   </div>
                               </div>
-      
-      
                           </div>
       
       
                           <div class="form-title">Thông tin cá nhân</div>
-      
-      
                           <div class="row">
                               <div class="col-md-6">
                                   <div class="row  m-b-15">
-                                      <div class="col-md-4  name m-t-5"> Tên đăng nhập <span class="text-danger">(*)</span> : </div>
+                                      <div class="col-md-4  name m-t-5"> Tên đăng nhập : <span class="text-danger">(*)</span></div>
                                       <div class="col-md-8 value">
                                           <input type="text" class="form-control input-sm" name="" value="">
                                       </div>
                                   </div>
                               </div>
-      
                               <div class="col-md-6">
                                   <div class="row  m-b-15">
-                                      <div class="col-md-4  name m-t-5"> Mã nhân viên <span class="text-danger">(*)</span> : </div>
-                                      <div class="col-md-8 value">
-                                          <div class="input-group">
-                                              <input type="email" class="form-control desdatepicker" placeholder="Pick a date">
-                                              <span class="input-group-addon">
-                                                  <i class="fa fa-calendar"></i>
-                                              </span>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-      
-                          <div class="row">
-                              <div class="col-md-6">
-                                  <div class="row  m-b-15">
-                                      <div class="col-md-4  name m-t-5"> Mật khẩu : </div>
+                                      <div class="col-md-4  name m-t-5"> Mật khẩu : <span class="text-danger">(*)</span></div>
                                       <div class="col-md-8 value">
                                           <input type="password" class="form-control input-sm" name="" value="">
                                       </div>
                                   </div>
                               </div>
+                          </div>
       
+                          <div class="row">
                               <div class="col-md-6">
                                   <div class="row  m-b-15">
-                                      <div class="col-md-4  name m-t-5">Tên nhân viên : </div>
+                                      <div class="col-md-4  name m-t-5"> Mã nhân viên : <span class="text-danger">(*)</span></div>
+                                      <div class="col-md-8 value">
+                                          <input type="text" class="form-control input-sm" name="" value="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="row  m-b-15">
+                                      <div class="col-md-4  name m-t-5">Tên nhân viên : <span class="text-danger">(*)</span></div>
                                       <div class="col-md-8 value">
                                           <input type="text " class="form-control input-sm" name="" value="">
                                       </div>
@@ -951,36 +946,6 @@
                           </div>
       
                           <div class="row">
-                              <div class="col-md-6">
-                                  <div class="row  m-b-15">
-                                      <div class="col-md-4  name m-t-5"> Tình trạng hôn nhân : </div>
-                                      <div class="col-md-8 value">
-      
-                                          <div class="radio radio-success">
-                                              <input type="radio" value="yes" name="optionyes" id="yes">
-                                              <label for="yes">Độc thân</label>
-                                              <input type="radio" checked="checked" value="no" name="optionyes" id="no">
-                                              <label for="no">Đã kết hôn</label>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-      
-                              <div class="col-md-6">
-                                  <div class="row  m-b-15">
-                                      <div class="col-md-4  name m-t-5"> Số điện thoại : </div>
-                                      <div class="col-md-8 value">
-                                          <input type="text " class="form-control input-sm" name="" value="">
-                                      </div>
-                                  </div>
-                              </div>
-      
-      
-                          </div>
-      
-                          <div class="row">
-      
-      
                               <div class="col-md-6">
                                   <div class="row  m-b-15">
                                       <div class="col-md-4  name m-t-5"> Chức vụ : </div>
@@ -993,22 +958,6 @@
                                       </div>
                                   </div>
                               </div>
-      
-                              <div class="col-md-6">
-                                  <div class="row  m-b-15">
-                                      <div class="col-md-4  name m-t-5"> Liên hệ: </div>
-                                      <div class="col-md-8 value">
-                                          <input type="text " class="form-control input-sm" name="" value="">
-                                      </div>
-                                  </div>
-                              </div>
-      
-      
-                          </div>
-      
-                          <div class="row">
-      
-      
                               <div class="col-md-6">
                                   <div class="row  m-b-15">
                                       <div class="col-md-4  name m-t-5"> Tên phòng ban : </div>
@@ -1021,17 +970,73 @@
                                       </div>
                                   </div>
                               </div>
+                          </div>
       
+                          <div class="row">
                               <div class="col-md-6">
                                   <div class="row  m-b-15">
-                                      <div class="col-md-4  name m-t-5"> Email: </div>
+                                      <div class="col-md-4  name m-t-5"> Tình trạng hôn nhân : </div>
                                       <div class="col-md-8 value">
-                                          <input type="email " class="form-control input-sm" name="" value="">
+                                          <div class="radio radio-success">
+                                              <input type="radio" value="yes" name="optionyes" id="yes">
+                                              <label for="yes">Độc thân</label>
+                                              <input type="radio" checked="checked" value="no" name="optionyes" id="no">
+                                              <label for="no">Đã kết hôn</label>
+                                          </div>
                                       </div>
                                   </div>
                               </div>
+                              <div class="col-md-6">
+                                  <div class="row  m-b-15">
+                                      <div class="col-md-4  name m-t-5"> Giới tính : </div>
+                                      <div class="col-md-8 value">
+                                          <div class="radio radio-success">
+                                              <input type="radio" value="yes1" name="optionyes1" id="yes1">
+                                              <label for="yes1">Nam</label>
+                                              <input type="radio" checked="checked" value="no1" name="optionyes1" id="no1">
+                                              <label for="no1">Nữ</label>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
       
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="row  m-b-15">
+                                      <div class="col-md-4  name m-t-5"> Số điện thoại : </div>
+                                      <div class="col-md-8 value">
+                                          <input type="text " class="form-control input-sm" name="" value="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="row  m-b-15">
+                                      <div class="col-md-4  name m-t-5"> Số liên lạc khẩn cấp : </div>
+                                      <div class="col-md-8 value">
+                                          <input type="text " class="form-control input-sm" name="" value="">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
       
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="row  m-b-15">
+                                      <div class="col-md-4  name m-t-5"> Email : </div>
+                                      <div class="col-md-8 value">
+                                          <input type="text " class="form-control input-sm" name="" value="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="row  m-b-15">
+                                      <div class="col-md-4  name m-t-5"> Liên hệ : </div>
+                                      <div class="col-md-8 value">
+                                          <input type="text " class="form-control input-sm" name="" value="">
+                                      </div>
+                                  </div>
+                              </div>
                           </div>
       
                           <div class="row">
@@ -1039,40 +1044,29 @@
                                   <div class="row  m-b-15">
                                       <div class="col-md-4  name m-t-5"> Ghi chú : </div>
                                       <div class="col-md-8 value">
-      
                                           <textarea rows="" class="form-control input-sm" cols=""></textarea>
                                       </div>
                                   </div>
                               </div>
-      
-      
                           </div>
       
-      
                           <h5>Tài liệu <span class="semi-bold"> Đính kèm</span>
-                              <button class="btn btn-default btn-sm  m-l-20 text-primary" type="button" data-toggle="modal" data-target="#modalThemTaiLieu"><i class="fa fa-file"></i> Thêm tài liệu
-                          </button>
-      
-      
+                              <button class="btn btn-default btn-sm  m-l-20 text-primary" type="button" data-toggle="modal" data-target="#modalThemTaiLieu"><i class="fa fa-file"></i> Thêm tài liệu</button>
                               <table class="table table-hover">
                                   <thead>
                                       <tr>
-      
-      
                                           <th>STT</th>
                                           <th>Tên tài liệu</th>
                                           <th>Tài liệu</th>
-      
                                           <th>Hành động</th>
-      
                                       </tr>
                                   </thead>
                                   <tbody>
                                       <tr>
-      
                                           <td class="v-align-middle">
                                               1
                                           </td>
+      
                                           <td class="v-align-middle">
                                               Giấy khai sinh
                                           </td>
@@ -1082,33 +1076,19 @@
                                           </td>
       
                                           <td class="v-align-middle">
-      
                                               <div class="btn-group sm-m-t-10">
                                                   <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalThemTaiLieu"><i class="fa fa-edit"></i> Chỉnh sữa</button>
                                                   <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
                                               </div>
-      
-      
                                           </td>
-      
                                       </tr>
-      
                                   </tbody>
                               </table>
-      
-      
-      
-      
-      
                               <div class="text-right m-t-20">
                                   <button type="button" class="btn btn-danger m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
                                   <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-save"></i> Lưu</button>
                               </div>
-      
-      
-      
                       </form>
-      
                   </div>
               </div>
               <!-- /.modal-content -->
@@ -1125,30 +1105,22 @@
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
                           class="pg-close fs-14"></i>
                       </button>
-                      <h5>Thêm <span class="semi-bold">Nhân viên</span></h5>
-                      <p>Các lưu ý cho thông tin khách hàng</p>
+                      <h5>Thông tin<span class="semi-bold">Nhân viên</span></h5>
                   </div>
                   <div class="modal-body">
                       <form role="form" class="desModalForm">
-      
-      
                           <div class="row">
                               <div class="col-md-6">
                                   <div class="row  m-b-15">
-                                      <div class="col-md-4  name m-t-5">Trạng thái: </div>
+                                      <div class="col-md-4  name m-t-5">Trạng thái : </div>
                                       <div class="col-md-8 value">
-      
                                           <input type="checkbox" data-init-plugin="switchery" data-size="small" data-color="primary" checked="checked" />
                                       </div>
                                   </div>
                               </div>
-      
-      
                           </div>
       
-      
                           <div class="form-title">Thông tin cá nhân</div>
-      
       
                           <div class="row">
                               <div class="col-md-6">
@@ -1159,23 +1131,6 @@
                                       </div>
                                   </div>
                               </div>
-      
-                              <div class="col-md-6">
-                                  <div class="row  m-b-15">
-                                      <div class="col-md-4  name m-t-5"> Mã nhân viên : </div>
-                                      <div class="col-md-8 value">
-                                          <div class="input-group">
-                                              <input type="email" class="form-control desdatepicker" placeholder="Pick a date">
-                                              <span class="input-group-addon">
-                                                  <i class="fa fa-calendar"></i>
-                                              </span>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-      
-                          <div class="row">
                               <div class="col-md-6">
                                   <div class="row  m-b-15">
                                       <div class="col-md-4  name m-t-5"> Mật khẩu : </div>
@@ -1184,7 +1139,9 @@
                                       </div>
                                   </div>
                               </div>
+                          </div>
       
+                          <div class="row">
                               <div class="col-md-6">
                                   <div class="row  m-b-15">
                                       <div class="col-md-4  name m-t-5">Tên nhân viên : </div>
@@ -1193,39 +1150,17 @@
                                       </div>
                                   </div>
                               </div>
-                          </div>
-      
-                          <div class="row">
                               <div class="col-md-6">
                                   <div class="row  m-b-15">
-                                      <div class="col-md-4  name m-t-5"> Tình trạng hôn nhân : </div>
+                                      <div class="col-md-4  name m-t-5"> Mã nhân viên : </div>
                                       <div class="col-md-8 value">
-      
-                                          <div class="radio radio-success">
-                                              <input type="radio" value="yes" name="optionyes" id="yes">
-                                              <label for="yes">Độc thân</label>
-                                              <input type="radio" checked="checked" value="no" name="optionyes" id="no">
-                                              <label for="no">Đã kết hôn</label>
-                                          </div>
+                                          <input type="text" class="form-control input-sm" name="" value="">
                                       </div>
                                   </div>
                               </div>
-      
-                              <div class="col-md-6">
-                                  <div class="row  m-b-15">
-                                      <div class="col-md-4  name m-t-5"> Số điện thoại : </div>
-                                      <div class="col-md-8 value">
-                                          <input type="text " class="form-control input-sm" name="" value="">
-                                      </div>
-                                  </div>
-                              </div>
-      
-      
                           </div>
       
                           <div class="row">
-      
-      
                               <div class="col-md-6">
                                   <div class="row  m-b-15">
                                       <div class="col-md-4  name m-t-5"> Chức vụ : </div>
@@ -1238,22 +1173,6 @@
                                       </div>
                                   </div>
                               </div>
-      
-                              <div class="col-md-6">
-                                  <div class="row  m-b-15">
-                                      <div class="col-md-4  name m-t-5"> Liên hệ: </div>
-                                      <div class="col-md-8 value">
-                                          <input type="text " class="form-control input-sm" name="" value="">
-                                      </div>
-                                  </div>
-                              </div>
-      
-      
-                          </div>
-      
-                          <div class="row">
-      
-      
                               <div class="col-md-6">
                                   <div class="row  m-b-15">
                                       <div class="col-md-4  name m-t-5"> Tên phòng ban : </div>
@@ -1266,17 +1185,73 @@
                                       </div>
                                   </div>
                               </div>
+                          </div>
       
+                          <div class="row">
                               <div class="col-md-6">
                                   <div class="row  m-b-15">
-                                      <div class="col-md-4  name m-t-5"> Email: </div>
+                                      <div class="col-md-4  name m-t-5"> Tình trạng hôn nhân : </div>
                                       <div class="col-md-8 value">
-                                          <input type="email " class="form-control input-sm" name="" value="">
+                                          <div class="radio radio-success">
+                                              <input type="radio" value="yes2" name="optionyes2" id="yes2">
+                                              <label for="yes2">Độc thân</label>
+                                              <input type="radio" checked="checked" value="no2" name="optionyes2" id="no2">
+                                              <label for="no2">Đã kết hôn</label>
+                                          </div>
                                       </div>
                                   </div>
                               </div>
+                              <div class="col-md-6">
+                                  <div class="row  m-b-15">
+                                      <div class="col-md-4  name m-t-5"> Giới tính : </div>
+                                      <div class="col-md-8 value">
+                                          <div class="radio radio-success">
+                                              <input type="radio" value="yes3" name="optionyes3" id="yes3">
+                                              <label for="yes3">Nam</label>
+                                              <input type="radio" checked="checked" value="no1" name="optionyes3" id="no3">
+                                              <label for="no3">Nữ</label>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
       
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="row  m-b-15">
+                                      <div class="col-md-4  name m-t-5"> Số điện thoại : </div>
+                                      <div class="col-md-8 value">
+                                          <input type="text " class="form-control input-sm" name="" value="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="row  m-b-15">
+                                      <div class="col-md-4  name m-t-5"> Số liên lạc khẩn cấp : </div>
+                                      <div class="col-md-8 value">
+                                          <input type="text " class="form-control input-sm" name="" value="">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
       
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="row  m-b-15">
+                                      <div class="col-md-4  name m-t-5"> Email : </div>
+                                      <div class="col-md-8 value">
+                                          <input type="text " class="form-control input-sm" name="" value="">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="row  m-b-15">
+                                      <div class="col-md-4  name m-t-5"> Liên hệ : </div>
+                                      <div class="col-md-8 value">
+                                          <input type="text " class="form-control input-sm" name="" value="">
+                                      </div>
+                                  </div>
+                              </div>
                           </div>
       
                           <div class="row">
@@ -1284,34 +1259,23 @@
                                   <div class="row  m-b-15">
                                       <div class="col-md-4  name m-t-5"> Ghi chú : </div>
                                       <div class="col-md-8 value">
-      
                                           <textarea rows="" class="form-control input-sm" cols=""></textarea>
                                       </div>
                                   </div>
                               </div>
-      
-      
                           </div>
       
-      
                           <h5>Tài liệu <span class="semi-bold"> Đính kèm</span>
-      
-      
                               <table class="table table-hover">
                                   <thead>
                                       <tr>
-      
-      
                                           <th>STT</th>
                                           <th>Tên tài liệu</th>
                                           <th>Tài liệu</th>
-      
-      
                                       </tr>
                                   </thead>
                                   <tbody>
                                       <tr>
-      
                                           <td class="v-align-middle">
                                               1
                                           </td>
@@ -1324,22 +1288,12 @@
                                           </td>
       
                                       </tr>
-      
                                   </tbody>
                               </table>
-      
-      
-      
-      
-      
                               <div class="text-right m-t-20">
                                   <button type="button" class="btn btn-danger m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
                               </div>
-      
-      
-      
                       </form>
-      
                   </div>
               </div>
               <!-- /.modal-content -->
@@ -1348,7 +1302,136 @@
       </div>
       <!-- END MODAL STICK UP  -->
       
-       
+      <!-- MODAL STICK UP  -->
+      <div class="modal fade stick-up" id="modalNghiepVu" role="dialog" aria-hidden="true" data-backdrop="static">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header clearfix text-left">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                          class="pg-close fs-14"></i>
+                      </button>
+                      <h5>Thông tin<span class="semi-bold"> Nghiệp vụ</span></h5>
+                      <button class="btn btn-default btn-sm m-b-10  m-t-5 text-primary" type="button" data-toggle="modal" data-target="#modalTaoNghiepVu"><i class="fa fa-file"></i> Tạo mới</button>
+      
+                  </div>
+                  <div class="modal-body">
+                      <form role="form" class="desModalForm">
+      
+                          <div class="table-responsive">
+                              <table class="table table-hover">
+                                  <thead>
+                                      <tr>
+                                          <th>STT</th>
+                                          <th>Tên nghiệp vụ</th>
+                                          <th>Mã Nghiệp vụ</th>
+                                          <th>Hành động</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td class="v-align-middle">
+                                              1
+                                          </td>
+      
+                                          <td class="v-align-middle">
+                                              Giám định nặng lượng
+                                          </td>
+      
+                                          <td class="v-align-middle">
+                                              123qwe
+                                          </td>
+      
+                                          <td class="v-align-middle">
+                                              <div class="btn-group sm-m-t-10">
+                                                  <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChinhSuaNghiepVu"><i class="fa fa-edit"></i> Chỉnh sữa</button>
+                                                  <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                              </div>
+                                          </td>
+                                      </tr>
+      
+                                  </tbody>
+                              </table>
+                          </div>
+      
+                          <div class="text-right m-t-20">
+                              <button type="button" class="btn btn-danger m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+      </div>
+      <!-- END MODAL STICK UP  -->
+      
+      <!-- MODAL STICK UP  -->
+      <div class="modal fade stick-up" id="modalTaoNghiepVu" role="dialog" aria-hidden="true" data-backdrop="static">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header clearfix text-left">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                          class="pg-close fs-14"></i>
+                      </button>
+                      <h5>Thêm mới <span class="semi-bold">Nghiệp vụ</span></h5>
+                  </div>
+                  <div class="modal-body">
+                      <div class="row  m-b-15">
+                          <div class="col-md-4  name m-t-5"> Tên nghiệp vụ </div>
+                          <div class="col-md-8 value">
+                              <input type="text" class="form-control " name="" value="">
+                          </div>
+                      </div>
+                      <div class="row  m-b-15">
+                          <div class="col-md-4  name m-t-5"> Mã nghiệp vụ </div>
+                          <div class="col-md-8 value">
+                              <input type="text" class="form-control " name="" value="">
+                          </div>
+                      </div>
+      
+                      <div class="text-right m-t-20">
+                          <button type="button" class="btn btn-danger m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
+                          <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-check"></i> Lưu</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- END MODAL STICK UP  -->
+      
+      <!-- MODAL STICK UP  -->
+      <div class="modal fade stick-up" id="modalChinhSuaNghiepVu" role="dialog" aria-hidden="true" data-backdrop="static">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header clearfix text-left">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                          class="pg-close fs-14"></i>
+                      </button>
+                      <h5>Chỉnh sửa <span class="semi-bold">Nghiệp vụ</span></h5>
+                  </div>
+                  <div class="modal-body">
+                      <div class="row  m-b-15">
+                          <div class="col-md-4  name m-t-5"> Tên nghiệp vụ </div>
+                          <div class="col-md-8 value">
+                              <input type="text" class="form-control " name="" value="">
+                          </div>
+                      </div>
+                      <div class="row  m-b-15">
+                          <div class="col-md-4  name m-t-5"> Mã nghiệp vụ </div>
+                          <div class="col-md-8 value">
+                              <input type="text" class="form-control " name="" value="">
+                          </div>
+                      </div>
+      
+                      <div class="text-right m-t-20">
+                          <button type="button" class="btn btn-danger m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
+                          <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-check"></i> Lưu</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- END MODAL STICK UP  --> 
       <!---->
       <!---->
       
@@ -1862,9 +1945,111 @@
       </div>
       <!-- END MODAL STICK UP -->
       
+      <!-- MODAL STICK UP  -->
+      <div class="modal fade stick-up " id="modalChiTietCongViec" role="dialog " aria-hidden="true " data-backdrop="static ">
+          <div class="modal-dialog modal-lg ">
+              <div class="modal-content ">
+                  <div class="modal-header clearfix text-left ">
+                      <button type="button " class="close " data-dismiss="modal" aria-hidden="true "><i class="pg-close fs-14 "></i>
+                      </button>
+                      <h5><span class="semi-bold ">CÔNG VIỆC HẰNG NGÀY</span></h5>
+                  </div>
+                  <div class="modal-body ">
+                      <div class="panel panel-default">
+                          <div class="panel-body">
+                              <form role="form" lpformnum="2" class="form-filter">
+                                  <div class="form-group">
+                                      <label for="">Công việc</label>
+                                      <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="">Tài liệu</label>
+                                      <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group">
+                                      <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
+                                  </div>
+                              </form>
+                              <div class="table table-responsive ">
+                                  <table class="table table-hover ">
+                                      <thead>
+                                          <tr>
+                                              <th style="width: 10%">STT</th>
+                                              <th style="width: 25%">Công việc</th>
+                                              <th style="width: 25%">Ngày giờ</th>
+                                              <th style="width: 20%">Tên tài liệu</th>
+                                              <th style="width: 20%">File</th>
+                                              <th style="width: 10%">Mô tả</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td class="v-align-middle ">1</td>
+                                              <td class="v-align-middle ">Thêm giấy</td>
+                                              <td class="v-align-middle ">9h30 12/03/2017</td>
+                                              <td class="v-align-middle ">ABCD</td>
+                                              <td class="v-align-middle "><a href=""><i class="fa fa-download"></i> tai-lieu-so-1.png</a></td>
+                                              <td class="v-align-middle">
+                                                  <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalMoTa"><i class="fa fa-edit"></i> Xem </button>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="v-align-middle ">2</td>
+                                              <td class="v-align-middle ">Hủy giấy</td>
+                                              <td class="v-align-middle ">9h30 12/03/2017</td>
+                                              <td class="v-align-middle ">ABC</td>
+                                              <td class="v-align-middle "><a href=""><i class="fa fa-download"></i> tai-lieu-so-1.png</a></td>
+                                              <td class="v-align-middle">
+                                                  <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalMoTa"><i class="fa fa-edit"></i> Xem </button>
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-12 text-right">
+                              <button type="button" class="btn btn-default" data-dismiss="modal"> Đóng</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- END MODAL STICK UP  -->
       
+      <!-- MODAL STICK UP  -->
+      <div class="modal fade stick-up" id="modalMoTa" data-backdrop="static" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header clearfix text-left">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                        </button>
+                      <h5>Mô tả<span class="semi-bold"> chi tiết</span></h5>
+                      <!--<p>Thông tin lưu ý khi cập nhập loại tiền</p>-->
+                  </div>
+                  <div class="modal-body">
+                      <form role="form">
       
-    </div>
+                          <div class="form-group">
+                              <label>Nội dung</label>
+                              <!--<span class="help">e.g. "some@example.com"</span>-->
+                              <textarea rows="" cols="" class="form-control"></textarea>
+                          </div>
+      
+                      </form>
+                      <div class="row">
+                          <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                              <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /.modal-content -->
+          </div>
+      </div>
+      <!-- END MODAL STICK UP  -->    </div>
     <!-- END PAGE CONTENT WRAPPER -->
   </div>
   <!-- END PAGE CONTAINER -->

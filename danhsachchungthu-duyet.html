@@ -796,6 +796,8 @@
                                               <th style="width: 5%">STT</th>
                                               <th style="width: 10%">Mã chứng thư</th>
                                               <th style="width: 15%">Loại hình giám định</th>
+                                              <th style="width: 15%">Ngày yêu cầu</th>
+                                              <th style="width: 15%">Ngày bắt đầu</th>
                                               <th style="width: 20%">Trạng thái</th>
                                               <th style="width: 10%">Hành động</th>
                                           </tr>
@@ -813,9 +815,15 @@
                                               <td class="v-align-middle ">
                                                   Giám định số lượng
                                               </td>
+                                              <td class="v-align-middle ">
+                                                  15/03/2017
+                                              </td>
+                                              <td class="v-align-middle ">
+                                                  15/03/2017
+                                              </td>
       
                                               <td class="v-align-middle">
-                                                  Hoàn thành giám định số lượng
+                                                  Hoàn thành giám định (17/03/2017)
                                               </td>
       
                                               <td class="v-align-middle ">
@@ -835,7 +843,12 @@
                                               <td class="v-align-middle ">
                                                   Giám định chất lượng
                                               </td>
-      
+                                              <td class="v-align-middle ">
+                                                  12/03/2017
+                                              </td>
+                                              <td class="v-align-middle ">
+                                                  13/03/2017
+                                              </td>
                                               <td class="v-align-middle">
                                                   Chưa hoàn thành giám định
                                               </td>
@@ -857,7 +870,12 @@
                                               <td class="v-align-middle ">
                                                   Giám định niêm phong
                                               </td>
-      
+                                              <td class="v-align-middle ">
+                                                  15/04/2017
+                                              </td>
+                                              <td class="v-align-middle ">
+                                                  15/04/2017
+                                              </td>
                                               <td class="v-align-middle">
                                                   Chưa hoàn thành giám định
                                               </td>
@@ -879,9 +897,14 @@
                                               <td class="v-align-middle ">
                                                   Giám định thiết bị
                                               </td>
-      
+                                              <td class="v-align-middle ">
+                                                  11/03/2017
+                                              </td>
+                                              <td class="v-align-middle ">
+                                                  11/03/2017
+                                              </td>
                                               <td class="v-align-middle">
-                                                  Chưa hoàn thành giám định
+                                                  Hoàn thành giám định (15/03/2017)
                                               </td>
       
                                               <td class="v-align-middle ">
@@ -901,7 +924,12 @@
                                               <td class="v-align-middle ">
                                                   Giám định hàng hải
                                               </td>
-      
+                                              <td class="v-align-middle ">
+                                                  11/02/2017
+                                              </td>
+                                              <td class="v-align-middle ">
+                                                  12/02/2017
+                                              </td>
                                               <td class="v-align-middle">
                                                   Chưa hoàn thành giám định
                                               </td>
@@ -923,7 +951,12 @@
                                               <td class="v-align-middle ">
                                                   Giám định hải quan
                                               </td>
-      
+                                              <td class="v-align-middle ">
+                                                  21/03/2017
+                                              </td>
+                                              <td class="v-align-middle ">
+                                                  22/03/2017
+                                              </td>
                                               <td class="v-align-middle">
                                                   Chưa hoàn thành giám định
                                               </td>
@@ -975,9 +1008,10 @@
               <div class="modal-content">
                   <div class="modal-header clearfix text-left">
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i></button>
-                      <h5 class="text-center m-t-20 m-b-20">
-                          CHỨNG THƯ GIÁM ĐỊNH SỐ LƯỢNG (SURVAY REPORT ON QUANTITY)
+                      <h5>
+                          <input type="text" class="form-control text-center" name="" value="CHỨNG THƯ SỐ LƯỢNG" placeholder="Nhập tên chứng thư">
                       </h5>
+      
                   </div>
                   <div class="modal-body">
                       <div class="panel panel-default">
@@ -1010,12 +1044,19 @@
                                   <div class="row">
                                       <div class="col-md-6">
                                           <div class="row  m-b-15">
-                                              <div class="col-md-4  name m-t-5"> Người yêu cầu (Applicant) : </div>
+                                              <div class="col-md-4  name m-t-5"> Đối tác yêu cầu <span class="text-danger">(*)</span> : </div>
                                               <div class="col-md-8 value">
-                                                  <input type="text" class="form-control" value="Nguyễn Văn A" Disabled>
+                                                  <select class="full-width select2-hidden-accessible" data-init-plugin="select2" multiple="" tabindex="-1" aria-hidden="true">
+                                                      <option value="1">Đối tác 1</option>
+                                                      <option value="2">Đối tác 2</option>
+                                                      <option value="3">Đối tác 3</option>
+                                                      <option value="4">Đối tác 4</option>
+                                                  </select>
+      
                                               </div>
                                           </div>
                                       </div>
+      
                                       <div class="col-md-6">
                                           <div class="row  m-b-15">
                                               <div class="col-md-4  name m-t-5">Địa điểm giám định (Place of survey) : </div>
@@ -1025,7 +1066,6 @@
                                           </div>
                                       </div>
                                   </div>
-      
                                   <div class="row">
                                       <div class="col-md-6">
                                           <div class="row  m-b-15">
@@ -1612,7 +1652,7 @@
                                           </table>
                                       </div>
                                       <div class="text-right m-t-20">
-                                          <button type="button" class="btn btn-danger m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Hủy</button>
+                                          <button type="button" class="btn btn-danger m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
                                           <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-save"></i> Lưu</button>
                                       </div>
                                   </div>
@@ -1632,9 +1672,9 @@
               <div class="modal-content">
                   <div class="modal-header clearfix text-left">
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i></button>
-                      <h5 class="text-center m-t-20 m-b-20">
-                          CHỨNG THƯ GIÁM ĐỊNH HÀNG HẢI
-                      </h5>
+      
+                      <h5><input type="text" class="form-control text-center" name="" value="CHỨNG THƯ GIÁM ĐỊNH HÀNG HẢI" placeholder="Nhập tên chứng thư"></h5>
+      
                   </div>
                   <div class="modal-body">
                       <div class="panel panel-default">
@@ -2060,7 +2100,8 @@
                   <div class="modal-header clearfix text-left">
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i></button>
                       <h5 class="text-center m-t-20 m-b-20">
-                          CHỨNG THƯ GIÁM ĐỊNH CHẤT LƯỢNG (SURVAY REPORT ON QUALITY)
+                          <input type="text" class="form-control text-center" name="" value="CHỨNG THƯ GIÁM ĐỊNH CHẤT LƯỢNG (SURVAY REPORT ON QUALITY)"
+                              placeholder="Nhập tên chứng thư">
                       </h5>
                   </div>
                   <div class="modal-body">
@@ -2090,21 +2131,29 @@
                                   </div>
       
                                   <div class="form-title">Thông tin giám định</div>
-      
                                   <div class="row">
                                       <div class="col-md-6">
                                           <div class="row  m-b-15">
-                                              <div class="col-md-4  name m-t-5"> Người yêu cầu (Applicant) : </div>
+                                              <div class="col-md-4  name m-t-5"> Đối tác yêu cầu <span class="text-danger">(*)</span> : </div>
                                               <div class="col-md-8 value">
-                                                  <input type="text" class="form-control" value="Nguyễn Văn A" Disabled>
+                                               <select class="full-width select2-hidden-accessible" data-init-plugin="select2" multiple="" tabindex="-1" aria-hidden="true">
+                                                      <option value="1">Đối tác 1</option>
+                                                      <option value="2">Đối tác 2</option>
+                                                      <option value="3">Đối tác 3</option>
+                                                      <option value="4">Đối tác 4</option>
+                                                  </select>
                                               </div>
                                           </div>
                                       </div>
+                               
                                       <div class="col-md-6">
                                           <div class="row  m-b-15">
                                               <div class="col-md-4  name m-t-5">Ngày dỡ hàng (Date of Discharge) : </div>
                                               <div class="col-md-8 value">
-                                                  <textarea rows="" cols="" class="form-control"></textarea>
+                                                  <div class="input-group">
+                                                      <input type="email" class="form-control desdatepicker input-sm" placeholder="Pick a date">
+                                                      <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                  </div>
                                               </div>
                                           </div>
                                       </div>
@@ -2115,7 +2164,7 @@
                                           <div class="row  m-b-15">
                                               <div class="col-md-4  name m-t-5">Hàng hóa khai báo (Declared cargo) : </div>
                                               <div class="col-md-8 value">
-                                                  <input type="text" class="form-control" value="Diêzen Do 0.05%" Disabled>
+                                                  <input type="text" class="form-control" value="Diêzen Do 0.05%">
                                               </div>
                                           </div>
                                       </div>
@@ -2243,7 +2292,7 @@
                                                   <td class="v-align-middle">
                                                       trong,sạch
                                                   </td>
-                                                  
+      
                                               </tr>
                                               <tr>
                                                   <td class="v-align-middle">2</td>
@@ -2254,7 +2303,7 @@
                                                   <td class="v-align-middle">
       
                                                   </td>
-                                                  
+      
                                               </tr>
                                               <tr>
                                                   <td class="v-align-middle">3</td>
@@ -2265,7 +2314,7 @@
                                                   <td class="v-align-middle">
                                                       Báo cáo
                                                   </td>
-                                                  
+      
                                               </tr>
       
                                               <tr>
@@ -2277,12 +2326,12 @@
                                                   <td class="v-align-middle">
                                                       max500
                                                   </td>
-                                                  
+      
                                               </tr>
                                           </tbody>
                                       </table>
                                       <div class="text-right m-t-20">
-                                          <button type="button" class="btn btn-danger m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Hủy</button>
+                                          <button type="button" class="btn btn-danger m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
                                           <button type="button" class="btn btn-primary  m-t-5"><i class="fa fa-save"></i> Lưu</button>
                                       </div>
                                   </div>
@@ -2302,7 +2351,7 @@
                   <div class="modal-header clearfix text-left">
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i></button>
                       <h5 class="text-center m-t-20 m-b-20">
-                          CHỨNG THƯ GIÁM ĐỊNH VỀ NIÊM PHONG HÀNG HÓA
+                          <input type="text" class="form-control text-center" name="" value="CHỨNG THƯ GIÁM ĐỊNH VỀ NIÊM PHONG HÀNG HÓA" placeholder="Nhập tên chứng thư">
                       </h5>
                   </div>
                   <div class="modal-body">
@@ -2333,16 +2382,21 @@
                                   </div>
       
                                   <div class="form-title">Thông tin giám định</div>
-      
                                   <div class="row">
                                       <div class="col-md-6">
                                           <div class="row  m-b-15">
-                                              <div class="col-md-4  name m-t-5"> Người yêu cầu (Applicant) : </div>
+                                              <div class="col-md-4  name m-t-5"> Đối tác yêu cầu <span class="text-danger">(*)</span> : </div>
                                               <div class="col-md-8 value">
-                                                  <input type="text" class="form-control" value="Nguyễn Văn A">
+                                                  <select class="full-width select2-hidden-accessible" data-init-plugin="select2" multiple="" tabindex="-1" aria-hidden="true">
+                                                      <option value="1">Đối tác 1</option>
+                                                      <option value="2">Đối tác 2</option>
+                                                      <option value="3">Đối tác 3</option>
+                                                      <option value="4">Đối tác 4</option>
+                                                  </select>
                                               </div>
                                           </div>
                                       </div>
+                              
                                       <div class="col-md-6">
                                           <div class="row  m-b-15">
                                               <div class="col-md-4  name m-t-5">Cảng xếp hàng (Port of Loading) : </div>
@@ -2454,7 +2508,8 @@
                   <div class="modal-header clearfix text-left">
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i></button>
                       <h5 class="text-center m-t-20 m-b-20">
-                          CHỨNG THƯ GIÁM ĐỊNH VỀ THIẾT BỊ
+      
+                          <input type="text" class="form-control text-center" name="" value="CHỨNG THƯ GIÁM ĐỊNH VỀ THIẾT BỊ" placeholder="Nhập tên chứng thư">
                       </h5>
                   </div>
                   <div class="modal-body">
@@ -2485,32 +2540,39 @@
                                   </div>
       
                                   <div class="form-title">Thông tin giám định</div>
-      
                                   <div class="row">
                                       <div class="col-md-6">
                                           <div class="row  m-b-15">
-                                              <div class="col-md-4  name m-t-5"> Người yêu cầu: </div>
+                                              <div class="col-md-4  name m-t-5"> Đối tác yêu cầu <span class="text-danger">(*)</span> : </div>
                                               <div class="col-md-8 value">
-                                                  <input type="text" class="form-control" value="Nguyễn Văn A">
+                                               <select class="full-width select2-hidden-accessible" data-init-plugin="select2" multiple="" tabindex="-1" aria-hidden="true">
+                                                      <option value="1">Đối tác 1</option>
+                                                      <option value="2">Đối tác 2</option>
+                                                      <option value="3">Đối tác 3</option>
+                                                      <option value="4">Đối tác 4</option>
+                                                  </select>
                                               </div>
                                           </div>
                                       </div>
-                                      <div class="col-md-6">
-                                          <div class="row  m-b-15">
-                                              <div class="col-md-4  name m-t-5">Khối lượng (G.W) : </div>
-                                              <div class="col-md-8 value">
-                                                  <input type="text" class="form-control" value="">
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-      
-                                  <div class="row">
+                               
                                       <div class="col-md-6">
                                           <div class="row  m-b-15">
                                               <div class="col-md-4  name m-t-5">Tên dự án : </div>
                                               <div class="col-md-8 value">
                                                   <input type="text" class="form-control" value="Diêzen Do 0.05%">
+                                              </div>
+                                          </div>
+                                      </div>
+      
+                                  </div>
+      
+                                  <div class="row">
+      
+                                      <div class="col-md-6">
+                                          <div class="row  m-b-15">
+                                              <div class="col-md-4  name m-t-5">Khối lượng (G.W) : </div>
+                                              <div class="col-md-8 value">
+                                                  <input type="text" class="form-control" value="">
                                               </div>
                                           </div>
                                       </div>
@@ -2636,7 +2698,8 @@
                   <div class="modal-header clearfix text-left">
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i></button>
                       <h5 class="text-center m-t-20 m-b-20">
-                          CHỨNG THƯ GIÁM ĐỊNH VỀ GIÁM ĐỊNH HẢI QUAN
+      
+                          <input type="text" class="form-control text-center" name="" value="CHỨNG THƯ GIÁM ĐỊNH VỀ GIÁM ĐỊNH HẢI QUAN" placeholder="Nhập tên chứng thư">
                       </h5>
                   </div>
                   <div class="modal-body">
@@ -2667,16 +2730,31 @@
                                   </div>
       
                                   <div class="form-title">Thông tin giám định</div>
-      
                                   <div class="row">
                                       <div class="col-md-6">
                                           <div class="row  m-b-15">
-                                              <div class="col-md-4  name m-t-5"> Người yêu cầu : </div>
+                                              <div class="col-md-4  name m-t-5"> Đối tác yêu cầu <span class="text-danger">(*)</span> : </div>
                                               <div class="col-md-8 value">
-                                                  <input type="text" class="form-control" value="Nguyễn Văn A">
+                                                 <select class="full-width select2-hidden-accessible" data-init-plugin="select2" multiple="" tabindex="-1" aria-hidden="true">
+                                                      <option value="1">Đối tác 1</option>
+                                                      <option value="2">Đối tác 2</option>
+                                                      <option value="3">Đối tác 3</option>
+                                                      <option value="4">Đối tác 4</option>
+                                                  </select>
                                               </div>
                                           </div>
                                       </div>
+                                      <div class="col-md-6">
+                                          <div class="row  m-b-15">
+                                              <div class="col-md-4  name m-t-5"></div>
+                                              <div class="col-md-8 value">
+                                                  
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+      
+                                  <div class="row">
                                       <div class="col-md-6">
                                           <div class="row  m-b-15">
                                               <div class="col-md-4  name m-t-5">Mục đích giám định : </div>
@@ -2685,9 +2763,7 @@
                                               </div>
                                           </div>
                                       </div>
-                                  </div>
       
-                                  <div class="row">
                                       <div class="col-md-6">
                                           <div class="row  m-b-15">
                                               <div class="col-md-4  name m-t-5">Đối tượng giám định : </div>
@@ -2696,6 +2772,11 @@
                                               </div>
                                           </div>
                                       </div>
+      
+                                  </div>
+      
+                                  <div class="row">
+      
                                       <div class="col-md-6">
                                           <div class="row  m-b-15">
                                               <div class="col-md-4  name m-t-5">Khối lượng hàng hoá theo khai báo : </div>
@@ -2704,9 +2785,7 @@
                                               </div>
                                           </div>
                                       </div>
-                                  </div>
       
-                                  <div class="row">
                                       <div class="col-md-6">
                                           <div class="row  m-b-15">
                                               <div class="col-md-4  name m-t-5">Thời điểm giám định : </div>
@@ -2717,6 +2796,10 @@
                                               </div>
                                           </div>
                                       </div>
+                                  </div>
+      
+                                  <div class="row">
+      
                                       <div class="col-md-6">
                                           <div class="row  m-b-15">
                                               <div class="col-md-4  name m-t-5">Địa điểm giám định : </div>
@@ -2725,17 +2808,15 @@
                                               </div>
                                           </div>
                                       </div>
-                                  </div>
-      
-                                  <div class="row">
-                                      <div class="row  m-b-15">
-                                          <div class="col-md-2 name m-t-5">Cơ sở giám định : </div>
-                                          <div class="col-md-10 value">
-                                              <textarea rows="" class="form-control" cols=""></textarea>
+                                      <div class="col-md-6">
+                                          <div class="row  m-b-15">
+                                              <div class="col-md-4 name m-t-5">Cơ sở giám định : </div>
+                                              <div class="col-md-8 value">
+                                                  <textarea rows="" class="form-control" cols=""></textarea>
+                                              </div>
                                           </div>
                                       </div>
                                   </div>
-      
                               </form>
                           </div>
                       </div>
@@ -3288,9 +3369,111 @@
       </div>
       <!-- END MODAL STICK UP -->
       
+      <!-- MODAL STICK UP  -->
+      <div class="modal fade stick-up " id="modalChiTietCongViec" role="dialog " aria-hidden="true " data-backdrop="static ">
+          <div class="modal-dialog modal-lg ">
+              <div class="modal-content ">
+                  <div class="modal-header clearfix text-left ">
+                      <button type="button " class="close " data-dismiss="modal" aria-hidden="true "><i class="pg-close fs-14 "></i>
+                      </button>
+                      <h5><span class="semi-bold ">CÔNG VIỆC HẰNG NGÀY</span></h5>
+                  </div>
+                  <div class="modal-body ">
+                      <div class="panel panel-default">
+                          <div class="panel-body">
+                              <form role="form" lpformnum="2" class="form-filter">
+                                  <div class="form-group">
+                                      <label for="">Công việc</label>
+                                      <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="">Tài liệu</label>
+                                      <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group">
+                                      <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
+                                  </div>
+                              </form>
+                              <div class="table table-responsive ">
+                                  <table class="table table-hover ">
+                                      <thead>
+                                          <tr>
+                                              <th style="width: 10%">STT</th>
+                                              <th style="width: 25%">Công việc</th>
+                                              <th style="width: 25%">Ngày giờ</th>
+                                              <th style="width: 20%">Tên tài liệu</th>
+                                              <th style="width: 20%">File</th>
+                                              <th style="width: 10%">Mô tả</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td class="v-align-middle ">1</td>
+                                              <td class="v-align-middle ">Thêm giấy</td>
+                                              <td class="v-align-middle ">9h30 12/03/2017</td>
+                                              <td class="v-align-middle ">ABCD</td>
+                                              <td class="v-align-middle "><a href=""><i class="fa fa-download"></i> tai-lieu-so-1.png</a></td>
+                                              <td class="v-align-middle">
+                                                  <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalMoTa"><i class="fa fa-edit"></i> Xem </button>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="v-align-middle ">2</td>
+                                              <td class="v-align-middle ">Hủy giấy</td>
+                                              <td class="v-align-middle ">9h30 12/03/2017</td>
+                                              <td class="v-align-middle ">ABC</td>
+                                              <td class="v-align-middle "><a href=""><i class="fa fa-download"></i> tai-lieu-so-1.png</a></td>
+                                              <td class="v-align-middle">
+                                                  <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalMoTa"><i class="fa fa-edit"></i> Xem </button>
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-12 text-right">
+                              <button type="button" class="btn btn-default" data-dismiss="modal"> Đóng</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- END MODAL STICK UP  -->
       
+      <!-- MODAL STICK UP  -->
+      <div class="modal fade stick-up" id="modalMoTa" data-backdrop="static" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header clearfix text-left">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                        </button>
+                      <h5>Mô tả<span class="semi-bold"> chi tiết</span></h5>
+                      <!--<p>Thông tin lưu ý khi cập nhập loại tiền</p>-->
+                  </div>
+                  <div class="modal-body">
+                      <form role="form">
       
-    </div>
+                          <div class="form-group">
+                              <label>Nội dung</label>
+                              <!--<span class="help">e.g. "some@example.com"</span>-->
+                              <textarea rows="" cols="" class="form-control"></textarea>
+                          </div>
+      
+                      </form>
+                      <div class="row">
+                          <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                              <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /.modal-content -->
+          </div>
+      </div>
+      <!-- END MODAL STICK UP  -->    </div>
     <!-- END PAGE CONTENT WRAPPER -->
   </div>
   <!-- END PAGE CONTAINER -->

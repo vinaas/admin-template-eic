@@ -2376,9 +2376,111 @@
       </div>
       <!-- END MODAL STICK UP -->
       
+      <!-- MODAL STICK UP  -->
+      <div class="modal fade stick-up " id="modalChiTietCongViec" role="dialog " aria-hidden="true " data-backdrop="static ">
+          <div class="modal-dialog modal-lg ">
+              <div class="modal-content ">
+                  <div class="modal-header clearfix text-left ">
+                      <button type="button " class="close " data-dismiss="modal" aria-hidden="true "><i class="pg-close fs-14 "></i>
+                      </button>
+                      <h5><span class="semi-bold ">CÔNG VIỆC HẰNG NGÀY</span></h5>
+                  </div>
+                  <div class="modal-body ">
+                      <div class="panel panel-default">
+                          <div class="panel-body">
+                              <form role="form" lpformnum="2" class="form-filter">
+                                  <div class="form-group">
+                                      <label for="">Công việc</label>
+                                      <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="">Tài liệu</label>
+                                      <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group">
+                                      <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-search"></i> Tìm kiếm</button>
+                                  </div>
+                              </form>
+                              <div class="table table-responsive ">
+                                  <table class="table table-hover ">
+                                      <thead>
+                                          <tr>
+                                              <th style="width: 10%">STT</th>
+                                              <th style="width: 25%">Công việc</th>
+                                              <th style="width: 25%">Ngày giờ</th>
+                                              <th style="width: 20%">Tên tài liệu</th>
+                                              <th style="width: 20%">File</th>
+                                              <th style="width: 10%">Mô tả</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td class="v-align-middle ">1</td>
+                                              <td class="v-align-middle ">Thêm giấy</td>
+                                              <td class="v-align-middle ">9h30 12/03/2017</td>
+                                              <td class="v-align-middle ">ABCD</td>
+                                              <td class="v-align-middle "><a href=""><i class="fa fa-download"></i> tai-lieu-so-1.png</a></td>
+                                              <td class="v-align-middle">
+                                                  <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalMoTa"><i class="fa fa-edit"></i> Xem </button>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="v-align-middle ">2</td>
+                                              <td class="v-align-middle ">Hủy giấy</td>
+                                              <td class="v-align-middle ">9h30 12/03/2017</td>
+                                              <td class="v-align-middle ">ABC</td>
+                                              <td class="v-align-middle "><a href=""><i class="fa fa-download"></i> tai-lieu-so-1.png</a></td>
+                                              <td class="v-align-middle">
+                                                  <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalMoTa"><i class="fa fa-edit"></i> Xem </button>
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-12 text-right">
+                              <button type="button" class="btn btn-default" data-dismiss="modal"> Đóng</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- END MODAL STICK UP  -->
       
+      <!-- MODAL STICK UP  -->
+      <div class="modal fade stick-up" id="modalMoTa" data-backdrop="static" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header clearfix text-left">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                        </button>
+                      <h5>Mô tả<span class="semi-bold"> chi tiết</span></h5>
+                      <!--<p>Thông tin lưu ý khi cập nhập loại tiền</p>-->
+                  </div>
+                  <div class="modal-body">
+                      <form role="form">
       
-    </div>
+                          <div class="form-group">
+                              <label>Nội dung</label>
+                              <!--<span class="help">e.g. "some@example.com"</span>-->
+                              <textarea rows="" cols="" class="form-control"></textarea>
+                          </div>
+      
+                      </form>
+                      <div class="row">
+                          <div class="col-sm-8 m-t-10 sm-m-t-10 text-right">
+                              <button type="button" class="btn btn-danger  m-t-5" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /.modal-content -->
+          </div>
+      </div>
+      <!-- END MODAL STICK UP  -->    </div>
     <!-- END PAGE CONTENT WRAPPER -->
   </div>
   <!-- END PAGE CONTAINER -->
