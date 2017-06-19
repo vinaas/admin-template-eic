@@ -54,33 +54,35 @@
                                         <td class="v-align-middle">
                                             <div class="btn-group sm-m-t-10">
                                                 <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChapNhan"><i class="fa fa-check"></i> Chấp nhận</button>
-                                                <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Chỉ định GĐV</button>
                                                 <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối</button>
+                                                <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChinhSuaYeuCauGiamDinh"><i class="fa fa-edit"></i> Sửa</button>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="v-align-middle">2</td>
-                                        <td class="v-align-middle"></td>
-                                        <td class="v-align-middle"></td>
-                                        <td class="v-align-middle"></td>
-                                        <td class="v-align-middle"></td>
-                                        <td class="v-align-middle"></td>
-                                        <td class="v-align-middle"></td>
+                                        <td class="v-align-middle">002</td>
+                                        <td class="v-align-middle">Petro</td>
+                                        <td class="v-align-middle">Nguyễn An</td>
+                                        <td class="v-align-middle">Giám định chất lượng</td>
+                                        <td class="v-align-middle">12/03/2017</td>
+                                        <td class="v-align-middle">Vũng tàu</td>
+                                        <td class="v-align-middle">
+                                            <a href="" class="text-primary" data-toggle="modal" data-target="#modalChiTietYeuCauGiamDinh"><i class="fa fa-info-circle"></i> Xem</a>
+                                        </td>
+                                        <td class="v-align-middle">
+                                            <div class="btn-group sm-m-t-10">
+                                                <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Chỉ định GĐV</button>
+                                                <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Từ chối</button>
+                                                <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChinhSuaYeuCauGiamDinh"><i class="fa fa-edit"></i> Sửa</button>
+                                            </div>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
-
-
                             {{>pagination}}
-
-
                             <div class="clearfix"></div>
-
                         </div>
-
-
-
                     </div>
 
                     <div class="tab-pane " id="tabDaChiDinh">
@@ -111,11 +113,11 @@
                                 </div>
                             </div>
 
-
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
                                         <th>STT</th>
+                                        <th>Số chứng thư</th>
                                         <th>Mã đối tác</th>
                                         <th>Đối tác yêu cầu</th>
                                         <th>Người yêu cầu</th>
@@ -129,6 +131,7 @@
                                 <tbody>
                                     <tr>
                                         <td class="v-align-middle">1</td>
+                                        <td class="v-align-middle">125489qqwe</td>
                                         <td class="v-align-middle">123</td>
                                         <td class="v-align-middle">ABC</td>
                                         <td class="v-align-middle">Nguyễn An</td>
@@ -141,27 +144,26 @@
                                         <td class="v-align-middle">
                                             <div class="btn-group sm-m-t-10">
                                                 <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Thêm GĐV</button>
-                                                <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Sửa</button>
-                                                <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Xóa</button>
+                                                <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="v-align-middle">2</td>
+                                        <td class="v-align-middle">125489qqwe</td>
                                         <td class="v-align-middle">321</td>
                                         <td class="v-align-middle">OCB</td>
-                                        <td class="v-align-middle"> Nguyễn An</td>
+                                        <td class="v-align-middle">Nguyễn An</td>
                                         <td class="v-align-middle">Giám định chất lượng</td>
                                         <td class="v-align-middle">Nguyễn Văn A</td>
-                                        <td class="v-align-middle"> Hoàn thành giám định</td>
+                                        <td class="v-align-middle">Hoàn thành giám định</td>
                                         <td class="v-align-middle">
                                             <a href="" class="text-primary" data-toggle="modal" data-target="#modalChiTietCongViec"><i class="fa fa-info-circle"></i> Xem</a>
                                         </td>
                                         <td class="v-align-middle">
                                             <div class="btn-group sm-m-t-10">
                                                 <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Thêm GĐV</button>
-                                                <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChiDinhGDV"><i class="fa fa-edit"></i> Sửa</button>
-                                                <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalTuChoi"><i class="fa fa-trash-o"></i> Xóa</button>
+                                                <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
                                             </div>
                                         </td>
                                     </tr>
@@ -174,6 +176,5 @@
             </div>
         </div>
     </div>
-</div>
 </div>
 {{/content}} {{#content "script" mode="append"}} {{/content}} {{/extend}}
