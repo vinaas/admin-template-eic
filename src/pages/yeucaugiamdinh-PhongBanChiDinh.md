@@ -1,6 +1,6 @@
 ---json
 {
-    "title": "Phòng ban chỉ định",
+    "title": "Quản lý giám định",
     "slug": "",
     "description": "Index Page",
     "layout": "yeucaugiamdinh-PhongBanChiDinh.html",
