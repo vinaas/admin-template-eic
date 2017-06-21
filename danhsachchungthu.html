@@ -2193,11 +2193,11 @@
                                                                   <div class="col-md-4  name m-t-5"> Đối tác yêu cầu <span class="text-danger">(*)</span> : </div>
                                                                   <div class="col-md-8 value">
                                                                       <select class="full-width select2-hidden-accessible" data-init-plugin="select2" multiple="" tabindex="-1" aria-hidden="true">
-                                                                                  <option value="1">Đối tác 1</option>
-                                                                                  <option value="2">Đối tác 2</option>
-                                                                                  <option value="3">Đối tác 3</option>
-                                                                                  <option value="4">Đối tác 4</option>
-                                                                              </select>
+                                                                          <option value="1">Đối tác 1</option>
+                                                                          <option value="2">Đối tác 2</option>
+                                                                          <option value="3">Đối tác 3</option>
+                                                                          <option value="4">Đối tác 4</option>
+                                                                      </select>
                                                                   </div>
                                                               </div>
                                                           </div>
@@ -2329,6 +2329,15 @@
                                                                   <h5 class="page-title">KẾT QUẢ GIÁM ĐỊNH (RESULT OF INSPECTION ON SHORE QUANTITY)</h5>
                                                               </div>
                                                           </div>
+                                                          <div class="row">
+                                                              <div class="col-md-4  name m-t-5"> Loại chỉ tiêu <span class="text-danger">(*)</span> : </div>
+                                                              <div class="col-md-8 value">
+                                                                  <select class="full-width select2-hidden-accessible input-sm" data-placeholder="Select Country" data-init-plugin="select2" tabindex="-1" aria-hidden="true">
+                                                                      <option value="AK">Do1</option>
+                                                                      <option value="HI">Do2</option>
+                                                              </select>
+                                                              </div>
+                                                          </div>
                                                           <table class="table table-hover">
                                                               <thead>
                                                                   <tr>
@@ -2336,6 +2345,7 @@
                                                                       <th style="width:20%">Test (Các chỉ tiêu)</th>
                                                                       <th style="width:20%">Unit (Đơn vị)</th>
                                                                       <th style="width:20%">EURO</th>
+                                                                      <th style="width:20%">Hành động</th>
                                                                   </tr>
                                                               </thead>
                                                               <tbody>
@@ -2348,6 +2358,12 @@
                                                                       <td class="v-align-middle">
                                                                           trong,sạch
                                                                       </td>
+                                                                      <td class="v-align-middle">
+                                                                          <div class="btn-group sm-m-t-10">
+                                                                              <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalThemTaiLieu"><i class="fa fa-edit"></i> Chỉnh sữa</button>
+                                                                              <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                                                          </div>
+                                                                      </td>
       
                                                                   </tr>
                                                                   <tr>
@@ -2357,7 +2373,12 @@
                                                                           kg/l
                                                                       </td>
                                                                       <td class="v-align-middle">
-      
+                                                                      </td>
+                                                                      <td class="v-align-middle">
+                                                                          <div class="btn-group sm-m-t-10">
+                                                                              <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalThemTaiLieu"><i class="fa fa-edit"></i> Chỉnh sữa</button>
+                                                                              <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                                                          </div>
                                                                       </td>
       
                                                                   </tr>
@@ -2370,19 +2391,38 @@
                                                                       <td class="v-align-middle">
                                                                           Báo cáo
                                                                       </td>
+                                                                      <td class="v-align-middle">
+                                                                          <div class="btn-group sm-m-t-10">
+                                                                              <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalThemTaiLieu"><i class="fa fa-edit"></i> Chỉnh sữa</button>
+                                                                              <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                                                          </div>
+                                                                      </td>
       
                                                                   </tr>
       
                                                                   <tr>
                                                                       <td class="v-align-middle">4</td>
                                                                       <td class="v-align-middle">Aromatic content</td>
+                                                                      <td class="v-align-middle">ppm</td>
+                                                                      <td class="v-align-middle">max500</td>
                                                                       <td class="v-align-middle">
-                                                                          ppm
-                                                                      </td>
-                                                                      <td class="v-align-middle">
-                                                                          max500
+                                                                          <div class="btn-group sm-m-t-10">
+                                                                              <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalThemTaiLieu"><i class="fa fa-edit"></i> Chỉnh sữa</button>
+                                                                              <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                                                          </div>
                                                                       </td>
       
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td class="v-align-middle">
+                                                                          <div class="btn-group sm-m-t-10">
+                                                                              <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalThemTaiLieu"><i class="fa fa-edit"></i> Thêm</button>
+                                                                          </div>
+                                                                      </td>
+                                                                      <td class="v-align-middle"></td>
+                                                                      <td class="v-align-middle"></td>
+                                                                      <td class="v-align-middle"></td>
+                                                                      <td class="v-align-middle"></td>
                                                                   </tr>
                                                               </tbody>
                                                           </table>
