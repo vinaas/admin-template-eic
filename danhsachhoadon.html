@@ -438,10 +438,12 @@
                                 </th>
                                 <th>STT</th>
                                 <th>Số chứng thư</th>
-                                <th>Hạng mục giám định</th>
                                 <th>Tên khách hàng</th>
+                                <th>Hạng mục giám định</th>
                                 <th>Ngày yêu cầu</th>
                                 <th>Ngày hoàn thành</th>
+                                <th>Địa điểm</th>
+                                <th>Trạng thái</th>
                                 <th>Chi tiết</th>
                                 <th>Hành động</th>
                             </tr>
@@ -456,18 +458,18 @@
                                 </td>
                                 <td class="v-align-middle">1</td>
                                 <td class="v-align-middle">6532</td>
-                                <td class="v-align-middle">Giám định chất lượng</td>
                                 <td class="v-align-middle">Nguyễn Văn A</td>
+                                <td class="v-align-middle">Giám định chất lượng</td>
                                 <td class="v-align-middle">20/05/2016</td>
                                 <td class="v-align-middle">20/06/2016</td>
+                                <td class="v-align-middle">Vũng Tàu</td>
+                                <td class="v-align-middle"><span class="label label-danger">Chưa tạo</span></td>
                                 <td class="v-align-middle">
                                     <a href="" class="text-primary" data-toggle="modal" data-target="#modalHoaDonKhachHang-ChiTiet"><i class="fa fa-info-circle"></i> Xem</a>
                                 </td>
                                 <td class="v-align-middle">
                                     <div class="btn-group sm-m-t-10">
-                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalXuatInvoicesNhap"><i class="fa fa-edit"></i> Xuất hoá đơn</button>
-                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChinhSuaHoaDon"><i class="fa fa-edit"></i> Chỉnh sữa</button>
-                                        <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
+                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalTaoMoiHoaDon"><i class="fa fa-file"></i> Tạo mới hoá đơn</button>
                                     </div>
                                 </td>
                             </tr>
@@ -480,10 +482,12 @@
                                 </td>
                                 <td class="v-align-middle">2</td>
                                 <td class="v-align-middle">456532</td>
-                                <td class="v-align-middle">Giám định số lượng</td>
                                 <td class="v-align-middle">Nguyễn Văn B</td>
+                                <td class="v-align-middle">Giám định số lượng</td>
                                 <td class="v-align-middle">20/05/2016</td>
                                 <td class="v-align-middle">20/06/2016</td>
+                                <td class="v-align-middle">Nha Trang</td>
+                                <td class="v-align-middle"><span class="label label-primary">Đã tạo</span></td>
                                 <td class="v-align-middle">
                                     <a href="" class="text-primary" data-toggle="modal" data-target="#modalHoaDonKhachHang-ChiTiet"><i class="fa fa-info-circle"></i> Xem</a>
                                 </td>
@@ -2274,6 +2278,36 @@
                               <button type="button" class="btn btn-primary  m-t-5">Hoàn thành</button>
                           </div>
                       </div>
+                  </div>
+              </div>
+              <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+      </div>
+      <!-- END MODAL STICK UP  -->
+      
+      <!-- MODAL STICK UP  -->
+      <div class="modal fade stick-up" id="modalLyDo" data-backdrop="static" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header clearfix text-left">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                        </button>
+                      <h5>Lý do <span class="semi-bold"> trả về</span></h5>
+                  </div>
+                  <div class="modal-body">
+                      <form role="form">
+      
+                          <div class="form-group">
+                              <label>Nội dung</label>
+                              <textarea rows="" cols="" class="form-control"></textarea>
+                          </div>
+                          <div class="row">
+                              <div class="text-right">
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close"></i> Đóng</button>
+                              </div>
+                          </div>
+                      </form>
                   </div>
               </div>
               <!-- /.modal-content -->
