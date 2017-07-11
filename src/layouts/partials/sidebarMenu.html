@@ -2,7 +2,14 @@
 <div class="sidebar-menu">
     <ul class="menu-items">
 
-        <li class=" m-t-30 {{#ifContain 'khachhang' layout }} active {{/ifContain}}">
+        <li class=" m-t-30 {{#ifContain 'dashboard' layout }} active {{/ifContain}}">
+            <a href="dashboard.html">
+                <span class="title">Màn hình chính</span>
+            </a>
+            <span class="icon-thumbnail "><i class="fa fa-home"></i></span>
+        </li>
+
+        <li class=" {{#ifContain 'khachhang' layout }} active {{/ifContain}}">
             <a href="quanlykhachhang.html">
                 <span class="title">Quản lý khách hàng</span>
             </a>
