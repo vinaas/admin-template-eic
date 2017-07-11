@@ -109,8 +109,7 @@ Generated From SASS
     .Sub,
     .sub {
         padding: 0 15px 0 10px;
-        list-style: none;
-        // list-style: none;
+        list-style: none; // list-style: none;
     }
 }
 
@@ -216,13 +215,11 @@ table .btn-group-vertical {
 }
 
 //Thiet ke table nhập lieu mercel
-
-
-.desModalForm{
-    .name{
+.desModalForm {
+    .name {
         font-size: 13px;
     }
-    .form-title{
+    .form-title {
         text-transform: uppercase;
         font-size: 14px;
         margin-bottom: 20px;
@@ -230,4 +227,12 @@ table .btn-group-vertical {
         color: gray;
     }
 }
-    
+
+.des-accordion{
+    &.panel-group .panel-heading {
+        background: #deeeff;
+    }
+    &.panel-group .panel-heading .panel-title>a {
+        color: black;
+    }
+}
