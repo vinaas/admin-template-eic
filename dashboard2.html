@@ -73,14 +73,14 @@
     <div class="sidebar-menu">
         <ul class="menu-items">
     
-            <li class=" m-t-30 ">
+            <li class=" m-t-30  active ">
                 <a href="dashboard2.html">
                     <span class="title">Dashboard</span>
                 </a>
                 <span class="icon-thumbnail "><i class="fa fa-bar-chart"></i></span>
             </li>
     
-            <li class="  ">
+            <li class="   active ">
                 <a href="dashboard.html">
                     <span class="title">Màn hình chính</span>
                 </a>
@@ -387,180 +387,657 @@
       <!-- START PAGE CONTENT -->
       <div class="content">
         <!-- START JUMBOTRON -->
-        
+         
 <br>
 <div class="container-fluid container-fixed-lg">
     <!-- BEGIN PlACE PAGE CONTENT HERE -->
     <!-- END PLACE PAGE CONTENT HERE -->
     <div class="row">
-        <div class="col-sm-7">
-            <h3 class="page-title">Chi tiết bộ chỉ tiêu
-                <button class="btn btn-default btn-sm m-b-10 m-l-20 m-t-5 text-primary" type="button" data-toggle="modal" data-target="#modalThemMoiChiTietChiTieu"><i class="fa fa-file"></i> Thêm mới chi tiết chỉ tiêu
-                </button>
+        <div class="col-sm-12">
+            <h3 class="page-title">Thống kê
+
             </h3>
         </div>
     </div>
-    <div class="row">
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label>Bộ chỉ tiêu </label>
-                        <input type="email" disabled placeholder="DO" class="form-control">
+
+
+    <div class="container-fluid padding-25 sm-padding-10">
+
+        <div class="row">
+            <div class="col-md-4 col-lg-3 col-xlg-2 ">
+                <div class="row">
+                    <div class="col-md-12 m-b-10">
+                        <!-- START WIDGET D3 widget_graphTileFlat-->
+                        <div class="widget-8 panel no-border bg-success no-margin widget-loader-bar">
+                            <div class="container-xs-height full-height">
+                                <div class="row-xs-height">
+                                    <div class="col-xs-height col-top">
+                                        <div class="panel-heading top-left top-right">
+                                            <div class="panel-title text-black hint-text">
+                                                <span class="font-montserrat fs-11 all-caps">Weekly Sales <i
+		                                class="fa fa-chevron-right"></i>
+                                                    </span>
+                                            </div>
+                                            <div class="panel-controls">
+                                                <ul>
+                                                    <li>
+                                                        <a data-toggle="refresh" class="portlet-refresh text-black" href="#"><i
+											class="portlet-icon portlet-icon-refresh"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-xs-height ">
+                                    <div class="col-xs-height col-top relative">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="p-l-20">
+                                                    <h3 class="no-margin p-b-5 text-white">$14,000</h3>
+                                                    <p class="small hint-text m-t-5">
+                                                        <span class="label  font-montserrat m-r-5">60%</span>Higher
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                            </div>
+                                        </div>
+                                        <div class='widget-8-chart line-chart' data-line-color="black" data-points="true" data-point-color="success" data-stroke-width="2">
+                                            <svg></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END WIDGET -->
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label>Ngày tạo </label>
-                        <div id="datepicker-component" class="input-group date">
-                            <input type="text" disabled class="form-control"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                <div class="row">
+                    <div class="col-md-12 m-b-10">
+                        <!-- START WIDGET widget_progressTileFlat-->
+                        <div class="widget-9 panel no-border bg-primary no-margin widget-loader-bar">
+                            <div class="container-xs-height full-height">
+                                <div class="row-xs-height">
+                                    <div class="col-xs-height col-top">
+                                        <div class="panel-heading  top-left top-right">
+                                            <div class="panel-title text-black">
+                                                <span class="font-montserrat fs-11 all-caps">Weekly Sales <i
+		                                class="fa fa-chevron-right"></i>
+                                                    </span>
+                                            </div>
+                                            <div class="panel-controls">
+                                                <ul>
+                                                    <li><a href="#" class="portlet-refresh text-black" data-toggle="refresh"><i
+										class="portlet-icon portlet-icon-refresh"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-xs-height">
+                                    <div class="col-xs-height col-top">
+                                        <div class="p-l-20 p-t-15">
+                                            <h3 class="no-margin p-b-5 text-white">$23,000</h3>
+                                            <a href="#" class="btn-circle-arrow text-white"><i
+								class="pg-arrow_minimize"></i>
+						</a>
+                                            <span class="small hint-text">65% lower than last month</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-xs-height">
+                                    <div class="col-xs-height col-bottom">
+                                        <div class="progress progress-small m-b-20">
+                                            <!-- START BOOTSTRAP PROGRESS (http://getbootstrap.com/components/#progress) -->
+                                            <div class="progress-bar progress-bar-white" style="width:45%"></div>
+                                            <!-- END BOOTSTRAP PROGRESS -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END WIDGET -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- START WIDGET widget_statTile-->
+                        <div class="widget-10 panel no-border bg-white no-margin widget-loader-bar">
+                            <div class="panel-heading top-left top-right ">
+                                <div class="panel-title text-black hint-text">
+                                    <span class="font-montserrat fs-11 all-caps">Weekly Sales <i class="fa fa-chevron-right"></i>
+                                        </span>
+                                </div>
+                                <div class="panel-controls">
+                                    <ul>
+                                        <li><a data-toggle="refresh" class="portlet-refresh text-black" href="#"><i
+							class="portlet-icon portlet-icon-refresh"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-body p-t-40">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h4 class="no-margin p-b-5 text-danger semi-bold">APPL 2.032</h4>
+                                        <div class="pull-left small">
+                                            <span>WMHC</span>
+                                            <span class=" text-success font-montserrat">
+                                                    <i class="fa fa-caret-up m-l-10"></i> 9%
+                                                </span>
+                                        </div>
+                                        <div class="pull-left m-l-20 small">
+                                            <span>HCRS</span>
+                                            <span class=" text-danger font-montserrat">
+                                                    <i class="fa fa-caret-up m-l-10"></i> 21%
+                                                </span>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="p-t-10 full-width">
+                                    <a href="#" class="btn-circle-arrow b-grey"><i
+						class="pg-arrow_minimize text-danger"></i></a>
+                                    <span class="hint-text small">Show more</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END WIDGET -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-5 col-xlg-6 m-b-10">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- START WIDGET D3 widget_graphWidget-->
+                        <div class="widget-12 panel no-border widget-loader-circle no-margin">
+                            <div class="row">
+                                <div class="col-xlg-8 ">
+                                    <div class="panel-heading pull-up top-right ">
+                                        <div class="panel-controls">
+                                            <ul>
+                                                <li class="hidden-xlg">
+                                                    <div class="dropdown">
+                                                        <a data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+                                                            <i class="portlet-icon portlet-icon-settings"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu pull-right" role="menu">
+                                                            <li><a href="#">AAPL</a>
+                                                            </li>
+                                                            <li><a href="#">YHOO</a>
+                                                            </li>
+                                                            <li><a href="#">GOOG</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a data-toggle="refresh" class="portlet-refresh text-black" href="#"><i class="portlet-icon portlet-icon-refresh"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xlg-8 ">
+                                        <div class="p-l-10">
+                                            <h2 class="pull-left">Số lượng yêu cầu</h2>
+                                            <h2 class="pull-left m-l-50 text-danger">
+                                                <span class="bold">448.97</span>
+                                                <span class="text-danger fs-12">-318.24</span>
+                                            </h2>
+                                            <div class="clearfix"></div>
+                                            <div class="full-width">
+                                                <ul class="list-inline">
+                                                    <li><a href="#" class="font-montserrat text-master">1D</a>
+                                                    </li>
+                                                    <li class="active"><a href="#" class="font-montserrat  bg-master-light text-master">5D</a>
+                                                    </li>
+                                                    <li><a href="#" class="font-montserrat text-master">1M</a>
+                                                    </li>
+                                                    <li><a href="#" class="font-montserrat text-master">1Y</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="nvd3-line line-chart text-center" data-x-grid="false">
+                                                <svg></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xlg-4 visible-xlg">
+                                        <div class="widget-12-search">
+                                            <p class="pull-left">Chi nhánh
+                                                <!-- <span class="bold">List</span> -->
+                                            </p>
+                                            <button class="btn btn-default btn-xs pull-right">
+                                <span class="bold">+</span>
+                              </button>
+                                            <div class="clearfix"></div>
+                                            <input type="text" placeholder="Search list" class="form-control m-t-5">
+                                        </div>
+                                        <div class="company-stat-boxes">
+                                            <div data-index="0" class="company-stat-box m-t-15 active padding-20 bg-master-lightest">
+                                                <div>
+                                                    <button type="button" class="close" data-dismiss="modal">
+                                                        <i class="pg-close fs-12"></i>
+                                                    </button>
+                                                    <p class="company-name pull-left text-uppercase bold no-margin">
+                                                        <span class="fa fa-circle text-success fs-11"></span> CHI NHÁNH DUNG QUẤT
+                                                    </p>
+                                                    <!-- <small class="hint-text m-l-10">Yahoo Inc.</small> -->
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="m-t-10">
+                                                    <p class="pull-left small hint-text no-margin p-t-5">9:42AM GT</p>
+                                                    <div class="pull-right">
+                                                        <p class="small hint-text no-margin inline">37.73</p>
+                                                        <span class=" label label-important p-t-5 m-l-5 p-b-5 inline fs-12">- 0.09</span>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                            <div data-index="1" class="company-stat-box m-t-15  padding-20 bg-master-lightest">
+                                                <div>
+                                                    <button type="button" class="close" data-dismiss="modal">
+                                                        <i class="pg-close fs-12"></i>
+                                                    </button>
+                                                    <p class="company-name pull-left text-uppercase bold no-margin">
+                                                        <span class="fa fa-circle text-primary fs-11"></span> CHI NHÁNH CẦN THƠ
+                                                    </p>
+                                                    <!-- <small class="hint-text m-l-10">Yahoo Inc.</small> -->
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="m-t-10">
+                                                    <p class="pull-left small hint-text no-margin p-t-5">9:42AM GT</p>
+                                                    <div class="pull-right">
+                                                        <p class="small hint-text no-margin inline">37.73</p>
+                                                        <span class=" label label-success p-t-5 m-l-5 p-b-5 inline fs-12">+ 0.09</span>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                            <div data-index="2" class="company-stat-box m-t-15  padding-20 bg-master-lightest">
+                                                <div>
+                                                    <button type="button" class="close" data-dismiss="modal">
+                                                        <i class="pg-close fs-12"></i>
+                                                    </button>
+                                                    <p class="company-name pull-left text-uppercase bold no-margin">
+                                                        <span class="fa fa-circle text-complete fs-11"></span> CHI NHÁNH ĐÀ NẴNG
+                                                    </p>
+                                                    <!-- <small class="hint-text m-l-10">Yahoo Inc.</small> -->
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="m-t-10">
+                                                    <p class="pull-left small hint-text no-margin p-t-5">9:42AM GT</p>
+                                                    <div class="pull-right">
+                                                        <p class="small hint-text no-margin inline">37.73</p>
+                                                        <span class=" label label-success p-t-5 m-l-5 p-b-5 inline fs-12">+ 0.09</span>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </template>
+                        <!-- END WIDGET -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 hidden-xlg m-b-10">
+                <!-- START WIDGET widget_tableWidgetBasic-->
+                <div class="widget-11-2 panel no-border panel-condensed no-margin widget-loader-circle">
+                    <div class="panel-heading top-right">
+                        <div class="panel-controls">
+                            <ul>
+                                <li><a data-toggle="refresh" class="portlet-refresh text-black" href="#"><i
+							class="portlet-icon portlet-icon-refresh"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="padding-25">
+                        <div class="pull-left">
+                            <h2 class="text-success no-margin">webarch</h2>
+                            <p class="no-margin">Today's sales</p>
+                        </div>
+                        <h3 class="pull-right semi-bold"><sup>
+				<small class="semi-bold">$</small>
+			</sup> 102,967
+                        </h3>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="auto-overflow widget-11-2-table">
+                        <table class="table table-condensed table-hover">
+                            <tbody>
+                                <tr>
+                                    <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
+                                    <td class="text-right hidden-lg">
+                                        <span class="hint-text small">dewdrops</span>
+                                    </td>
+                                    <td class="text-right b-r b-dashed b-grey col-lg-3">
+                                        <span class="hint-text small">Qty 1</span>
+                                    </td>
+                                    <td class="col-lg-3">
+                                        <span class="font-montserrat fs-18">$27</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
+                                    <td class="text-right hidden-lg">
+                                        <span class="hint-text small">dewdrops</span>
+                                    </td>
+                                    <td class="text-right b-r b-dashed b-grey col-lg-3">
+                                        <span class="hint-text small">Qty 1</span>
+                                    </td>
+                                    <td class="col-lg-3">
+                                        <span class="font-montserrat fs-18">$27</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
+                                    <td class="text-right hidden-lg">
+                                        <span class="hint-text small">dewdrops</span>
+                                    </td>
+                                    <td class="text-right b-r b-dashed b-grey col-lg-3">
+                                        <span class="hint-text small">Qty 1</span>
+                                    </td>
+                                    <td class="col-lg-3">
+                                        <span class="font-montserrat fs-18">$27</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
+                                    <td class="text-right hidden-lg">
+                                        <span class="hint-text small">dewdrops</span>
+                                    </td>
+                                    <td class="text-right b-r b-dashed b-grey col-lg-3">
+                                        <span class="hint-text small">Qty 1</span>
+                                    </td>
+                                    <td class="col-lg-3">
+                                        <span class="font-montserrat fs-18">$27</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
+                                    <td class="text-right hidden-lg">
+                                        <span class="hint-text small">dewdrops</span>
+                                    </td>
+                                    <td class="text-right b-r b-dashed b-grey col-lg-3">
+                                        <span class="hint-text small">Qty 1</span>
+                                    </td>
+                                    <td class="col-lg-3">
+                                        <span class="font-montserrat fs-18">$27</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
+                                    <td class="text-right hidden-lg">
+                                        <span class="hint-text small">dewdrops</span>
+                                    </td>
+                                    <td class="text-right b-r b-dashed b-grey col-lg-3">
+                                        <span class="hint-text small">Qty 1</span>
+                                    </td>
+                                    <td class="col-lg-3">
+                                        <span class="font-montserrat fs-18">$27</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
+                                    <td class="text-right hidden-lg">
+                                        <span class="hint-text small">dewdrops</span>
+                                    </td>
+                                    <td class="text-right b-r b-dashed b-grey col-lg-3">
+                                        <span class="hint-text small">Qty 1</span>
+                                    </td>
+                                    <td class="col-lg-3">
+                                        <span class="font-montserrat fs-18">$27</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
+                                    <td class="text-right hidden-lg">
+                                        <span class="hint-text small">dewdrops</span>
+                                    </td>
+                                    <td class="text-right b-r b-dashed b-grey col-lg-3">
+                                        <span class="hint-text small">Qty 1</span>
+                                    </td>
+                                    <td class="col-lg-3">
+                                        <span class="font-montserrat fs-18">$27</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
+                                    <td class="text-right hidden-lg">
+                                        <span class="hint-text small">dewdrops</span>
+                                    </td>
+                                    <td class="text-right b-r b-dashed b-grey col-lg-3">
+                                        <span class="hint-text small">Qty 1</span>
+                                    </td>
+                                    <td class="col-lg-3">
+                                        <span class="font-montserrat fs-18">$27</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
+                                    <td class="text-right hidden-lg">
+                                        <span class="hint-text small">dewdrops</span>
+                                    </td>
+                                    <td class="text-right b-r b-dashed b-grey col-lg-3">
+                                        <span class="hint-text small">Qty 1</span>
+                                    </td>
+                                    <td class="col-lg-3">
+                                        <span class="font-montserrat fs-18">$27</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="padding-25">
+                        <p class="small no-margin">
+                            <a href="#"><i class="fa fs-16 fa-arrow-circle-o-down text-success m-r-10"></i></a>
+                            <span class="hint-text ">Show more details of APPLE . INC</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- END WIDGET -->
+            </div>
+            <div class="col-md-6 hidden-lg visible-md visible-xlg col-xlg-4 m-b-10">
+                <!-- START WIDGET D3 widget_stackedBarWidget-->
+                <div class="widget-15 panel panel-condensed  no-margin no-border widget-loader-circle">
+                    <div class="panel-heading">
+                        <div class="panel-controls">
+                            <ul>
+                                <li><a href="#" class="portlet-collapse" data-toggle="collapse"><i
+							class="portlet-icon portlet-icon-collapse"></i></a>
+                                </li>
+                                <li><a href="#" class="portlet-refresh text-black" data-toggle="refresh"><i
+							class="portlet-icon portlet-icon-refresh"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-body no-padding">
+                        <ul class="nav nav-tabs nav-tabs-simple">
+                            <li class="active">
+                                <a href="#widget-15-tab-1" class="p-t-5">
+                                     CẦN THƠ <br> 22.23<br>
+						            <span class="text-success">+60.223%</span>
+					            </a>
+                            </li>
+                            <li><a href="#widget-15-tab-2" class="p-t-5">
+                                    DUNG QUẤT <br> 45.97<br>
+					                <span class="text-danger">-06.56%</span>
+				                </a>
+                            </li>
+                            <li><a href="#widget-15-tab-3" class="p-t-5">
+					                ĐÀ NẴNG <br> 22.23<br>
+					                <span class="text-success">+60.223%</span>
+				                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content p-l-20 p-r-20">
+                            <div class="tab-pane no-padding active" id="widget-15-tab-1">
+                                <div class="full-width">
+                                    <div class="full-width">
+                                        <div class="widget-15-chart rickshaw-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane no-padding" id="widget-15-tab-2">
+                            </div>
+                            <div class="tab-pane" id="widget-15-tab-3">
+                            </div>
+                        </div>
+                        <div class="p-t-20 p-l-20 p-r-20 p-b-30">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <p class="fs-16 text-black">Apple’s Motivation - Innovation
+                                        <br>distinguishes between A leader and a follower.
+                                    </p>
+                                    <p class="small hint-text">CÔNG TY CỔ PHẦN GIÁM ĐỊNH NĂNG LƯỢNG VIỆT NAM
+                                        <br>ĐT: (+84) 08 3514 9708 - Fax: (+84) 08 3514 9709
+                                    </p>
+                                </div>
+                                <div class="col-md-3 text-right">
+                                    <p class="font-montserrat bold text-success m-r-20 fs-16">+0.94</p>
+                                    <p class="font-montserrat bold text-danger m-r-20 fs-16">-0.63</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- END WIDGET -->
             </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label>Tên chi tiết chỉ tiêu </label>
-                        <input type="email" class="form-control">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <button class="btn btn-primary btn-cons m-t-25" type="button"><i class="fa fa-plus"></i> Tìm kiếm</button>
-                    </div>
-                </div>
+        <div class="row">
 
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="row">
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <div class="panel-heading">
-                    <div class="pull-right m-b-10">
-                        <span class="pull-left m-t-10 m-r-5"><b>1 - 100</b> trong tổng số <b>1412</b></span>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
+            <div class="col-md-4 col-lg-3 col-xlg-3 m-b-10">
+                <!-- START WIDGET D3 widget_graphOptionsWidget-->
+                <div class="widget-16 panel no-border  no-margin widget-loader-circle">
+                    <div class="panel-heading">
+                        <div class="panel-title">Page Options
+                        </div>
+                        <div class="panel-controls">
+                            <ul>
+                                <li><a href="#" class="portlet-refresh text-black" data-toggle="refresh"><i
+							class="portlet-icon portlet-icon-refresh"></i></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="clearfix"></div>
+                    <div class="widget-16-header padding-20">
+                        <span class="icon-thumbnail bg-master-light pull-left text-master">ws</span>
+                        <div class="pull-left">
+                            <p class="hint-text all-caps font-montserrat  small no-margin overflow-ellipsis ">Pages name
+                            </p>
+                            <h5 class="no-margin overflow-ellipsis ">Webarch Sales Analysis</h5>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="p-l-25 p-r-45 p-t-25 p-b-25">
+                        <div class="row">
+                            <div class="col-md-4 ">
+                                <p class="hint-text all-caps font-montserrat small no-margin ">Views</p>
+                                <p class="all-caps font-montserrat  no-margin text-success ">14,256</p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <p class="hint-text all-caps font-montserrat small no-margin ">Today</p>
+                                <p class="all-caps font-montserrat  no-margin text-warning ">24</p>
+                            </div>
+                            <div class="col-md-4 text-right">
+                                <p class="hint-text all-caps font-montserrat small no-margin ">Week</p>
+                                <p class="all-caps font-montserrat  no-margin text-success ">56</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative no-overflow">
+                        <div class="widget-16-chart line-chart" data-line-color="success" data-points="true" data-point-color="white" data-stroke-width="2">
+                            <svg></svg>
+                        </div>
+                    </div>
+                    <div class="b-b b-t b-grey p-l-20 p-r-20 p-b-10 p-t-10">
+                        <p class="pull-left">Post is Public</p>
+                        <div class="pull-right">
+                            <input type="checkbox" data-init-plugin="switchery" />
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="b-b b-grey p-l-20 p-r-20 p-b-10 p-t-10">
+                        <p class="pull-left">Maintenance mode</p>
+                        <div class="pull-right">
+                            <input type="checkbox" data-init-plugin="switchery" checked="checked" />
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="p-l-20 p-r-20 p-t-10 p-b-10 ">
+                        <p class="pull-left no-margin hint-text">Super secret options</p>
+                        <a href="#" class="pull-right"><i class="fa fa-arrow-circle-o-down text-success fs-16"></i></a>
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
-
-                <div class="table-responsive">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th style="width:20%">STT</th>
-                                <th style="width:20%">Test (Các chỉ tiêu)</th>
-                                <th style="width:20%">Unit (Đơn vị)</th>
-                                <th style="width:20%">EURO</th>
-                                <th style="width:20%"> Hành động</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="v-align-middle">1</td>
-                                <td class="v-align-middle">Appearance</td>
-                                <td class="v-align-middle">
-
-                                </td>
-                                <td class="v-align-middle">
-                                    trong,sạch
-                                </td>
-                                <td class="v-align-middle">
-                                    <div class="btn-group sm-m-t-10">
-
-                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChinhSuaChiTieu"><i class="fa fa-edit"></i> Chỉnh sữa</button>
-                                        <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="v-align-middle">2</td>
-                                <td class="v-align-middle">Density at 15 &deg; C</td>
-                                <td class="v-align-middle">
-                                    kg/l
-                                </td>
-                                <td class="v-align-middle">
-
-                                </td>
-                                <td class="v-align-middle">
-                                    <div class="btn-group sm-m-t-10">
-                                        <!--<button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-plus"></i> Thêm mới</button>-->
-                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChinhSuaChiTieu"><i class="fa fa-edit"></i> Chỉnh sữa</button>
-                                        <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="v-align-middle">3</td>
-                                <td class="v-align-middle">Distillation IBP</td>
-                                <td class="v-align-middle">
-                                    &deg;C
-                                </td>
-                                <td class="v-align-middle">
-                                    Báo cáo
-                                </td>
-                                <td class="v-align-middle">
-                                    <div class="btn-group sm-m-t-10">
-                                        <!--<button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-plus"></i> Thêm mới</button>-->
-                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChinhSuaChiTieu"><i class="fa fa-edit"></i> Chỉnh sữa</button>
-                                        <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="v-align-middle">4</td>
-                                <td class="v-align-middle">Aromatic content</td>
-                                <td class="v-align-middle">
-                                    ppm
-                                </td>
-                                <td class="v-align-middle">
-                                    max500
-                                </td>
-                                <td class="v-align-middle">
-                                    <div class="btn-group sm-m-t-10">
-                                        <!--<button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#"><i class="fa fa-plus"></i> Thêm mới</button>-->
-                                        <button type="button" class="btn btn-default btn-sm text-primary" data-toggle="modal" data-target="#modalChinhSuaChiTieu"><i class="fa fa-edit"></i> Chỉnh sữa</button>
-                                        <button type="button" class="btn btn-default btn-sm text-danger" data-toggle="modal" data-target="#modalXoa"><i class="fa fa-trash-o"></i> Xóa</button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <nav aria-label="Page navigation" class="text-center">
-                      <ul class="pagination">
-                        <li>
-                          <a href="#" aria-label="Previous">
-                            <span aria-hidden="true"> <i class="fa fa-angle-left"></i> </span>
-                          </a>
-                        </li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                          <a href="#" aria-label="Next">
-                            <span aria-hidden="true"> <i class="fa fa-angle-right"></i> </span>
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>                </div>
+                <!-- END WIDGET -->
             </div>
+            <div class="col-xlg-2 visible-xlg ">
+                <div class="widget-18 panel no-border  no-margin ">
+                    <div class="padding-15">
+                        <div class="item-header clearfix">
+                            <div class="thumbnail-wrapper d32 circular">
+                                <img width="40" height="40" src="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" data-src-retina="assets/img/profiles/3x.jpg" alt="">
+                            </div>
+                            <div class="inline m-l-10">
+                                <p class="no-margin">
+                                    <strong>Anne Simons</strong>
+                                </p>
+                                <p class="no-margin hint-text">Shared a link
+                                    <span class="location semi-bold"><i class="fa fa-map-marker"></i> NY center</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <ul class="buttons pull-top top-right list-inline p-r-10 p-t-10">
+                            <li>
+                                <a class="text-white" href="#"><i class="fa fa-expand"></i>
+					</a>
+                            </li>
+                            <li>
+                                <a class="text-white" href="#"><i class="fa fa-heart-o"></i>
+					</a>
+                            </li>
+                        </ul>
+                        <div class="widget-18-post bg-black no-overflow">
+                        </div>
+                    </div>
+                    <div class="padding-15">
+                        <div class="hint-text pull-left">few seconds ago</div>
+                        <ul class="list-inline pull-right no-margin">
+                            <li><a class="text-master hint-text" href="#">5,345 <i class="fa fa-comment-o"></i></a>
+                            </li>
+                            <li><a class="text-master hint-text" href="#">23K <i class="fa fa-heart-o"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
+
+
+
+
+
 </div>
-
 
 
         <!-- END CONTAINER FLUID -->
@@ -3046,7 +3523,29 @@
     }
   </script>
 
-    
+   
+
+
+
+<script src="assets/plugins/nvd3/lib/d3.v3.js" type="text/javascript"></script>
+<script src="assets/plugins/nvd3/nv.d3.min.js" type="text/javascript"></script>
+<script src="assets/plugins/nvd3/src/utils.js" type="text/javascript"></script>
+<script src="assets/plugins/nvd3/src/tooltip.js" type="text/javascript"></script>
+<script src="assets/plugins/nvd3/src/interactiveLayer.js" type="text/javascript"></script>
+<script src="assets/plugins/nvd3/src/models/axis.js" type="text/javascript"></script>
+<script src="assets/plugins/nvd3/src/models/line.js" type="text/javascript"></script>
+<script src="assets/plugins/nvd3/src/models/lineWithFocusChart.js" type="text/javascript"></script>
+<script src="assets/plugins/mapplic/js/hammer.js"></script>
+<script src="assets/plugins/mapplic/js/jquery.mousewheel.js"></script>
+<script src="assets/plugins/mapplic/js/mapplic.js"></script>
+<script src="assets/plugins/rickshaw/rickshaw.min.js"></script>
+<script src="assets/plugins/jquery-metrojs/MetroJs.min.js" type="text/javascript"></script>
+<script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+<script src="assets/plugins/skycons/skycons.js" type="text/javascript"></script>
+
+<script src="assets/dashboard.js" type="text/javascript"></script>
+
+
 
   <!-- END PAGE LEVEL JS -->
 </body>
